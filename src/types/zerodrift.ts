@@ -1,3 +1,13 @@
+export interface TrustedLogo {
+  src?: string;
+  alt: string;
+}
+
+export interface LayerStep {
+  title: string;
+  body: string;
+}
+
 export interface LayerFeature {
   eyebrow: string;
   title: string;
