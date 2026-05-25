@@ -1,20 +1,14 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
 export const metadata: Metadata = {
-  title: "Website Clone",
-  description: "Pixel-perfect website clone",
+  title: "ZeroDrift - The AI Compliance Firewall",
+  description:
+    "ZeroDrift enforces SEC, FINRA, and firm policies on every message in real-time.",
+  icons: {
+    icon: "/seo/31-698a386255086c519eaa48cd_fav.png",
+    apple: "/seo/32-698a3864caf4c5bbba1e1f4f_webclip.png",
+  },
 };
 
 export default function RootLayout({
@@ -23,10 +17,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-    >
+    <html lang="en" className="h-full antialiased ">
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
   );

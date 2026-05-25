@@ -4,11 +4,51 @@
 
 @custom-variant dark (&:is(.dark *));
 
+@font-face {
+  font-family: "Aeonik";
+  src: url("/images/zerodrift/34-6981494c5f153c4cf64a5679_Aeonik-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Aeonik";
+  src: url("/images/zerodrift/33-6981494cc00a2cac04bf2aa0_Aeonik-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Aeonik";
+  src: url("/images/zerodrift/35-6981494c9fe20839040ddb63_Aeonik-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Aeonik";
+  src: url("/images/zerodrift/36-6981494cc5e2eed53902470e_Aeonik-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Aeonik Fono";
+  src: url("/images/zerodrift/37-6982228f8719a7f7786894cd_AeonikFonoVF-Roman.ttf") format("truetype");
+  font-weight: 300 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: "Geist", "Geist Fallback", ui-sans-serif, system-ui, sans-serif;
-  --font-mono: "Geist Mono", "Geist Mono Fallback", ui-monospace, monospace;
+  --font-sans: "Aeonik", Arial, ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "Aeonik Fono", "SFMono-Regular", ui-monospace, monospace;
   --font-heading: var(--font-sans);
   --color-sidebar-ring: var(--sidebar-ring);
   --color-sidebar-border: var(--sidebar-border);
@@ -49,8 +89,8 @@
 }
 
 :root {
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
+  --background: oklch(0.94 0 0);
+  --foreground: oklch(0.18 0.004 286);
   --card: oklch(1 0 0);
   --card-foreground: oklch(0.145 0 0);
   --popover: oklch(1 0 0);
@@ -126,5 +166,39 @@
   }
   html {
     @apply font-sans;
+  }
+}
+
+@layer components {
+  .zd-grid {
+    background-image: url("/images/zerodrift/27-6983a00ac891219169a2c859_main-grid.svg");
+    background-position: center top;
+    background-repeat: repeat;
+  }
+
+  .zd-seal {
+    display: inline-flex;
+    width: 64px;
+    height: 64px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(255 255 255 / 75%);
+    border-radius: 999px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.1;
+  }
+
+  .zd-stars {
+    display: inline-flex;
+    width: 76px;
+    height: 64px;
+    align-items: center;
+    justify-content: center;
+    border: 1px dashed rgb(255 255 255 / 70%);
+    border-radius: 999px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.1;
   }
 }

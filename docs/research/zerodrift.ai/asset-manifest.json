@@ -1,0 +1,284 @@
+[
+  {
+    "url": "https://cdn-cookieyes.com/assets/images/revisit.svg",
+    "publicPath": "/images/zerodrift/01-revisit.svg",
+    "bytes": 2339,
+    "ok": true
+  },
+  {
+    "url": "https://cdn-cookieyes.com/assets/images/close.svg",
+    "publicPath": "/images/zerodrift/02-close.svg",
+    "bytes": 1345,
+    "ok": true
+  },
+  {
+    "url": "https://cdn.prod.website-files.com/6981490c51c1e151d4cb9219/698272edf18ab399e2728f23_logo-black.svg",
+    "publicPath": "/images/zerodrift/03-698272edf18ab399e2728f23_logo-black.svg",
+    "bytes": 16180,
+    "ok": true
+  },
+  {
+    "url": "https://cdn.prod.website-files.com/6981490c51c1e151d4cb9219/698503efe9b9ae75d0a3287d_compose.avif",
+    "publicPath": "/images/zerodrift/04-698503efe9b9ae75d0a3287d_compose.avif",
+    "bytes": 3126,
+    "ok": true
+  },
+  {
+    "url": "https://cdn.prod.website-files.com/6981490c51c1e151d4cb9219/698503ef9ba9f64a8ba9de86_guard.avif",
+    "publicPath": "/images/zerodrift/05-698503ef9ba9f64a8ba9de86_guard.avif",
+    "bytes": 2016,
+    "ok": true
+  },
+  {
+    "url": "https://cdn.prod.website-files.com/6981490c51c1e151d4cb9219/698503ef886462d4f4a93f48_compose-1.avif",
+    "publicPath": "/images/zerodrift/06-698503ef886462d4f4a93f48_compose-1.avif",
+    "bytes": 1927,
+    "ok": true
+  },
+  {
+    "url": "https://cdn.prod.website-files.com/6981490c51c1e151d4cb9219/698156d72ba723e90ea09bdb_home-hero-logos.avif",
+    "publicPath": "/images/zerodrift/07-698156d72ba723e90ea09bdb_home-hero-logos.avif",
+    "bytes": 5324,
+    "ok": true
+  },
+  {
+    "url": "https://cdn.prod.website-files.com/6981490c51c1e151d4cb9219/6984e4b05ba88fef9658ee3f_Google_2015_logo.avif",
+    "publicPath": "/images/zerodrift/08-6984e4b05ba88fef9658ee3f_Google_2015_logo.avif",
+    "bytes": 3960,
+    "ok": true
+  },
+  {
+    "url": "https://cdn.prod.website-files.com/6981490c51c1e151d4cb9219/6984e4b02ef70a3378fb669c_Microsoft_logo_(2012).avif",
+    "publicPath": "/images/zerodrift/09-6984e4b02ef70a3378fb669c_Microsoft_logo_-2012-.avif",
+    "bytes": 3936,
+    "ok": true
+  },
+  {
+    "url": "https://cdn.prod.website-files.com/6981490c51c1e151d4cb9219/6984e4b0e31a385443d1dac3_Mask%20group.avif",
+    "publicPath": "/images/zerodrift/10-6984e4b0e31a385443d1dac3_Mask-group.avif",
+    "bytes": 7141,
+    "ok": true
+  },
+  {
+    "url": "https://cdn.prod.website-files.com/6981490c51c1e151d4cb9219/6984e4b0c6ee26f63cbd82a0_goldman-sachs-2.avif",
+    "publicPath": "/images/zerodrift/11-6984e4b0c6ee26f63cbd82a0_goldman-sachs-2.avif",
+    "bytes": 6378,
+    "ok": true
+  },
+  {
+    "url": "https://cdn.prod.website-files.com/6981490c51c1e151d4cb9219/69850876bf88c52505917c3e_ibm.svg",
+    "publicPath": "/images/zerodrift/12-69850876bf88c52505917c3e_ibm.svg",
+    "bytes": 3486,
+    "ok": true
+  },
+  {
+    "url": "https://cdn.prod.website-files.com/6981490c51c1e151d4cb9219/698a9a9489b318db90f91ecd_6035bd616bfc9ad3f193814dee198ccb_home-illu-1.svg",
+    "publicPath": "/images/zerodrift/13-698a9a9489b318db90f91ecd_6035bd616bfc9ad3f193814dee198ccb_home-illu-1.svg",
+    "bytes": 52139,
+    "ok": true
+  },
+  {
+    "url": "https://cdn.prod.website-files.com/6981490c51c1e151d4cb9219/698a9a94735f622e057384f9_home-illu-2.png",
+    "publicPath": "/images/zerodrift/14-698a9a94735f622e057384f9_home-illu-2.png",
+    "bytes": 337003,
+    "ok": true
+  },
+  {
+    "url": "https://cdn.prod.website-files.com/6981490c51c1e151d4cb9219/698a9a945f1f7b62177ac90c_home-illu-3.png",
+    "publicPath": "/images/zerodrift/15-698a9a945f1f7b62177ac90c_home-illu-3.png",
+    "bytes": 262501,
+    "ok": true
+  },
+  {
+    "url": "https://cdn.prod.website-files.com/6981490c51c1e151d4cb9219/6986ab810085141ce873787b_mozilla.svg",
+    "publicPath": "/images/zerodrift/16-6986ab810085141ce873787b_mozilla.svg",
+    "bytes": 10472,
+    "ok": true
+  },
+  {
+    "url": "https://cdn.prod.website-files.com/6981490c51c1e151d4cb9219/6986abacddc292574d40788f_copilot-color.avif",
+    "publicPath": "/images/zerodrift/17-6986abacddc292574d40788f_copilot-color.avif",
+    "bytes": 9458,
+    "ok": true
+  },
+  {
+    "url": "https://cdn.prod.website-files.com/6981490c51c1e151d4cb9219/69852a8bcf31ec098f29802a_image%20440.avif",
+    "publicPath": "/images/zerodrift/18-69852a8bcf31ec098f29802a_image-440.avif",
+    "bytes": 8000,
+    "ok": true
+  },
+  {
+    "url": "https://cdn.prod.website-files.com/6981490c51c1e151d4cb9219/69852a8b979e8f951aec56c2_image%20441.avif",
+    "publicPath": "/images/zerodrift/19-69852a8b979e8f951aec56c2_image-441.avif",
+    "bytes": 8344,
+    "ok": true
+  },
+  {
+    "url": "https://cdn.prod.website-files.com/6981490c51c1e151d4cb9219/69852a8b01ae940fccc07121_image%20442.avif",
+    "publicPath": "/images/zerodrift/20-69852a8b01ae940fccc07121_image-442.avif",
+    "bytes": 7317,
+    "ok": true
+  },
+  {
+    "url": "https://cdn.prod.website-files.com/6981490c51c1e151d4cb9219%2F6983902256e7c4da0df2ff82_orange-gradient_mp4.mp4",
+    "publicPath": "/images/zerodrift/21-6983902256e7c4da0df2ff82_orange-gradient_mp4.mp4",
+    "bytes": 351609,
+    "ok": true
+  },
+  {
+    "url": "https://kacpero.fra1.cdn.digitaloceanspaces.com/zerodrift/1080-%2051892-zerodrift-hero-90s-16x9-10976572661-v3_2_v10%20(1080p).mp4",
+    "publicPath": "/images/zerodrift/22-1080--51892-zerodrift-hero-90s-16x9-10976572661-v3_2_v10--1080p-.mp4",
+    "bytes": 36688475,
+    "ok": true
+  },
+  {
+    "url": "https://cdn.prod.website-files.com/6981490c51c1e151d4cb9219%2F6983f430668f6310d8391151_dev-illus_mp4.mp4",
+    "publicPath": "/images/zerodrift/23-6983f430668f6310d8391151_dev-illus_mp4.mp4",
+    "bytes": 384405,
+    "ok": true
+  },
+  {
+    "url": "https://cdn.prod.website-files.com/6981490c51c1e151d4cb9219%2F698a2c65de3709d7e9a5188b_guard_mp4.mp4",
+    "publicPath": "/images/zerodrift/24-698a2c65de3709d7e9a5188b_guard_mp4.mp4",
+    "bytes": 4198534,
+    "ok": true
+  },
+  {
+    "url": "https://cdn.prod.website-files.com/6981490c51c1e151d4cb9219%2F69839085edb11a12b2ad6a95_blocker-gradient_mp4.mp4",
+    "publicPath": "/images/zerodrift/25-69839085edb11a12b2ad6a95_blocker-gradient_mp4.mp4",
+    "bytes": 589871,
+    "ok": true
+  },
+  {
+    "url": "https://cdn.prod.website-files.com/6981490c51c1e151d4cb9219%2F6983902256e7c4da0df2ff82_orange-gradient_poster.0000000.jpg",
+    "publicPath": "/images/zerodrift/26-6983902256e7c4da0df2ff82_orange-gradient_poster.0000000.jpg",
+    "bytes": 27229,
+    "ok": true
+  },
+  {
+    "url": "https://cdn.prod.website-files.com/6981490c51c1e151d4cb9219/6983a00ac891219169a2c859_main-grid.svg",
+    "publicPath": "/images/zerodrift/27-6983a00ac891219169a2c859_main-grid.svg",
+    "bytes": 2042,
+    "ok": true
+  },
+  {
+    "url": "https://cdn.prod.website-files.com/6981490c51c1e151d4cb9219%2F6983f430668f6310d8391151_dev-illus_poster.0000000.jpg",
+    "publicPath": "/images/zerodrift/28-6983f430668f6310d8391151_dev-illus_poster.0000000.jpg",
+    "bytes": 18896,
+    "ok": true
+  },
+  {
+    "url": "https://cdn.prod.website-files.com/6981490c51c1e151d4cb9219%2F698a2c65de3709d7e9a5188b_guard_poster.0000000.jpg",
+    "publicPath": "/images/zerodrift/29-698a2c65de3709d7e9a5188b_guard_poster.0000000.jpg",
+    "bytes": 30625,
+    "ok": true
+  },
+  {
+    "url": "https://cdn.prod.website-files.com/6981490c51c1e151d4cb9219%2F69839085edb11a12b2ad6a95_blocker-gradient_poster.0000000.jpg",
+    "publicPath": "/images/zerodrift/30-69839085edb11a12b2ad6a95_blocker-gradient_poster.0000000.jpg",
+    "bytes": 29902,
+    "ok": true
+  },
+  {
+    "url": "https://cdn.prod.website-files.com/6981490c51c1e151d4cb9219/698a386255086c519eaa48cd_fav.png",
+    "publicPath": "/seo/31-698a386255086c519eaa48cd_fav.png",
+    "bytes": 876,
+    "ok": true
+  },
+  {
+    "url": "https://cdn.prod.website-files.com/6981490c51c1e151d4cb9219/698a3864caf4c5bbba1e1f4f_webclip.png",
+    "publicPath": "/seo/32-698a3864caf4c5bbba1e1f4f_webclip.png",
+    "bytes": 8544,
+    "ok": true
+  },
+  {
+    "url": "https://cdn.prod.website-files.com/6981490c51c1e151d4cb9219/6981494cc00a2cac04bf2aa0_Aeonik-Light.ttf",
+    "publicPath": "/images/zerodrift/33-6981494cc00a2cac04bf2aa0_Aeonik-Light.ttf",
+    "bytes": 98484,
+    "ok": true
+  },
+  {
+    "url": "https://cdn.prod.website-files.com/6981490c51c1e151d4cb9219/6981494c5f153c4cf64a5679_Aeonik-Regular.ttf",
+    "publicPath": "/images/zerodrift/34-6981494c5f153c4cf64a5679_Aeonik-Regular.ttf",
+    "bytes": 98720,
+    "ok": true
+  },
+  {
+    "url": "https://cdn.prod.website-files.com/6981490c51c1e151d4cb9219/6981494c9fe20839040ddb63_Aeonik-Medium.ttf",
+    "publicPath": "/images/zerodrift/35-6981494c9fe20839040ddb63_Aeonik-Medium.ttf",
+    "bytes": 99628,
+    "ok": true
+  },
+  {
+    "url": "https://cdn.prod.website-files.com/6981490c51c1e151d4cb9219/6981494cc5e2eed53902470e_Aeonik-Bold.ttf",
+    "publicPath": "/images/zerodrift/36-6981494cc5e2eed53902470e_Aeonik-Bold.ttf",
+    "bytes": 100740,
+    "ok": true
+  },
+  {
+    "url": "https://cdn.prod.website-files.com/6981490c51c1e151d4cb9219/6982228f8719a7f7786894cd_AeonikFonoVF-Roman.ttf",
+    "publicPath": "/images/zerodrift/37-6982228f8719a7f7786894cd_AeonikFonoVF-Roman.ttf",
+    "bytes": 139676,
+    "ok": true
+  },
+  {
+    "url": "https://cdn.prod.website-files.com/6981490c51c1e151d4cb9219/6981490e51c1e151d4cb9282_chevron-down.svg",
+    "publicPath": "/images/zerodrift/38-6981490e51c1e151d4cb9282_chevron-down.svg",
+    "bytes": 226,
+    "ok": true
+  },
+  {
+    "url": "https://cdn.prod.website-files.com/6981490c51c1e151d4cb9219/6981490e51c1e151d4cb9298_chevron-down-white.svg",
+    "publicPath": "/images/zerodrift/39-6981490e51c1e151d4cb9298_chevron-down-white.svg",
+    "bytes": 226,
+    "ok": true
+  },
+  {
+    "url": "https://cdn.prod.website-files.com/6981490c51c1e151d4cb9219/69824dcc32aedcb0ceb5139e_52b3672e569404dbe128460eca3e694a_grid-bg.svg",
+    "publicPath": "/images/zerodrift/40-69824dcc32aedcb0ceb5139e_52b3672e569404dbe128460eca3e694a_grid-bg.svg",
+    "bytes": 1534,
+    "ok": true
+  },
+  {
+    "url": "https://cdn.prod.website-files.com/6981490c51c1e151d4cb9219/69825af01a7be14930ab6afe_web%20bg.avif",
+    "publicPath": "/images/zerodrift/41-69825af01a7be14930ab6afe_web-bg.avif",
+    "bytes": 1382,
+    "ok": true
+  },
+  {
+    "url": "https://cdn.prod.website-files.com/6981490c51c1e151d4cb9219/69825af01a7be14930ab6af8_ai%20bg.avif",
+    "publicPath": "/images/zerodrift/42-69825af01a7be14930ab6af8_ai-bg.avif",
+    "bytes": 1586,
+    "ok": true
+  },
+  {
+    "url": "https://cdn.prod.website-files.com/6981490c51c1e151d4cb9219/69825af01a7be14930ab6af2_documents%20bg.avif",
+    "publicPath": "/images/zerodrift/43-69825af01a7be14930ab6af2_documents-bg.avif",
+    "bytes": 1273,
+    "ok": true
+  },
+  {
+    "url": "https://cdn.prod.website-files.com/6981490c51c1e151d4cb9219/69825af01a7be14930ab6b04_social%20bg.avif",
+    "publicPath": "/images/zerodrift/44-69825af01a7be14930ab6b04_social-bg.avif",
+    "bytes": 1212,
+    "ok": true
+  },
+  {
+    "url": "https://cdn.prod.website-files.com/6981490c51c1e151d4cb9219/69825af01a7be14930ab6aec_email%20bg.avif",
+    "publicPath": "/images/zerodrift/45-69825af01a7be14930ab6aec_email-bg.avif",
+    "bytes": 681,
+    "ok": true
+  },
+  {
+    "url": "https://cdn.prod.website-files.com/6981490c51c1e151d4cb9219/698361ba1dd43aa018bf3489_dark-grid.svg",
+    "publicPath": "/images/zerodrift/46-698361ba1dd43aa018bf3489_dark-grid.svg",
+    "bytes": 1931,
+    "ok": true
+  },
+  {
+    "url": "https://cdn.prod.website-files.com/6981490c51c1e151d4cb9219/6983ef3be293fd7448adc1cc_CaretDown.svg",
+    "publicPath": "/images/zerodrift/47-6983ef3be293fd7448adc1cc_CaretDown.svg",
+    "bytes": 814,
+    "ok": true
+  }
+]
