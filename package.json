@@ -1,8 +1,8 @@
 {
-  "name": "ai-website-clone-template",
+  "name": "impact-flow",
   "version": "0.3.1",
   "private": true,
-  "description": "Clone any website into a clean, modern Next.js codebase using AI coding agents",
+  "description": "Impact flow website",
   "author": "JCodesMore",
   "license": "MIT",
   "repository": {

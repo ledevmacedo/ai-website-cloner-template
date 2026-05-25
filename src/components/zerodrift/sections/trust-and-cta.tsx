@@ -2,28 +2,57 @@ import { ZERODRIFT_ASSET_PATH } from "../constants";
 import { SectionFrame } from "../section-frame";
 
 export function TrustAndCta() {
+  const pilotChecks = [
+    "Se a instituição ganha tempo na operação.",
+    "Se os dados ficam mais completos e confiáveis.",
+    "Se os formandos conseguem construir perfis mais claros.",
+    "Se empresas percebem valor em perfis validados por evidências.",
+  ];
+
+  const faqs = [
+    {
+      question: "O Impact Flow já está desenvolvido?",
+      answer:
+        "O projeto está em fase de ideação avançada, com proposta de valor e escopo inicial do MVP definidos.",
+    },
+    {
+      question: "Qual é o primeiro produto a validar?",
+      answer:
+        "O MVP começa com ATS Social e Passaporte de Competências, por atacarem a dor operacional e criarem a primeira base de evidências.",
+    },
+    {
+      question: "A instituição precisa mudar todo o processo para testar?",
+      answer:
+        "Não. O piloto começa com um recorte controlado, como uma turma, um programa ou uma fase do processo.",
+    },
+  ];
+
   return (
     <>
-      <SectionFrame className="mt-8">
+      <SectionFrame className="mt-8" id="impacto">
         <div className="zd-grid flex min-h-[658px] flex-col items-center justify-center rounded-[7px] bg-white px-8 py-20 text-center">
           <h2 className="max-w-[430px] text-[40px] font-light leading-[1.05]">
-            Engineered For Regulated Institutions
+            Mais transparência para as instituições. Mais oportunidades para os formandos.
           </h2>
-          <p className="mt-40 max-w-[440px] text-[14px] leading-[1.5] text-[#747780]">
-            Built for firms where the stakes are high. SOC 2 certified. SEC and FINRA rules encoded. Ready for whatever comes next.
+          <p className="mt-24 max-w-[520px] text-[14px] leading-[1.5] text-[#747780]">
+            Quando os dados estão organizados, fica mais fácil acompanhar resultados, provar valor a financiadores e criar pontes reais com empresas.
           </p>
-          <a
-            className="mt-7 inline-flex h-9 items-center rounded-[6px] bg-[#171719] px-5 text-[10px] font-bold uppercase text-white"
-            href="#"
-          >
-            View Trust Center
-          </a>
+          <div className="mt-10 grid w-full max-w-[840px] gap-3 text-left md:grid-cols-2">
+            {pilotChecks.map((item) => (
+              <p
+                className="rounded-[8px] border border-[#e7e7e7] bg-white px-4 py-3 text-[13px] leading-[1.4] text-[#747780]"
+                key={item}
+              >
+                {item}
+              </p>
+            ))}
+          </div>
         </div>
       </SectionFrame>
-      <SectionFrame className="mt-8" id="demo">
+      <SectionFrame className="mt-8" id="piloto">
         <div className="relative overflow-hidden rounded-[7px] bg-[#1343d8] px-8 py-12 text-white md:px-10">
           <video
-            aria-hidden
+            aria-label="Animação de fundo do piloto Impact Flow"
             autoPlay
             className="absolute inset-0 size-full object-cover"
             loop
@@ -39,41 +68,56 @@ export function TrustAndCta() {
           <div className="relative grid gap-8 md:grid-cols-[1fr_430px]">
             <div>
               <p className="text-[11px] font-bold uppercase">
-                30 minutes. Your content. Live results.
+                6 a 8 semanas. Uma turma. Métricas simples.
               </p>
               <h2 className="mt-5 max-w-[470px] text-[42px] font-light leading-[1.05]">
-                See ZeroDrift On Your Communications
+                Vamos validar o Impact Flow com uma instituição real?
               </h2>
               <p className="mt-5 max-w-[530px] text-[15px] font-medium leading-[1.45]">
-                Run your real communications through ZeroDrift. Watch issues get caught and fixed at the source. See your team finally unblocked.
+                Estamos preparados para validar o MVP com parceiros institucionais. O piloto começa pequeno, com foco em ATS Social e Passaporte de Competências.
               </p>
-              <div className="mt-8 flex max-w-[470px] flex-col gap-3 sm:flex-row">
+              <div className="mt-8 flex max-w-[470px] flex-col gap-3 sm:flex-row" id="contato">
                 <input
-                  aria-label="Work email"
+                  aria-label="Email institucional"
                   className="h-11 flex-1 rounded-[6px] bg-white px-4 text-[13px] text-[#171719] outline-none"
-                  placeholder="Work email"
+                  placeholder="Email institucional"
                 />
                 <button
                   className="h-11 rounded-[6px] bg-white px-6 text-[11px] font-bold uppercase text-[#171719]"
                   type="button"
                 >
-                  Book Demo
+                  Quero conversar
                 </button>
               </div>
               <p className="mt-5 text-[10px] font-bold uppercase">
-                30 min - no prep - your data never stored - response in 2 hours
+                Sem mudança total do processo - validação controlada - foco em ROI social
               </p>
             </div>
             <blockquote className="self-center rounded-[8px] bg-white p-8 text-[#171719]">
               <p className="text-[20px] font-light leading-[1.35]">
-                {`"Our team moves faster because they know exactly what's compliant. And our compliance team finally focuses on real work, not chasing down emails."`}
+                {`"Conte um pouco sobre o programa que quer validar. A ideia é perceber se o Impact Flow pode ajudar numa turma, numa fase do processo ou num piloto mais completo."`}
               </p>
               <footer className="mt-8 text-[11px] font-bold uppercase text-[#555]">
-                Head of Compliance
+                Impact Flow
                 <br />
-                Large Broker-Dealer
+                Piloto institucional
               </footer>
             </blockquote>
+          </div>
+        </div>
+      </SectionFrame>
+      <SectionFrame className="mt-8" id="faq">
+        <div className="rounded-[7px] bg-white px-8 py-12">
+          <h2 className="text-[38px] font-light leading-none">Perguntas frequentes</h2>
+          <div className="mt-8 grid gap-4 md:grid-cols-3">
+            {faqs.map((item) => (
+              <article className="rounded-[8px] bg-[#f5f5f5] p-5" key={item.question}>
+                <h3 className="text-[16px] font-medium text-[#171719]">{item.question}</h3>
+                <p className="mt-3 text-[13px] leading-[1.45] text-[#747780]">
+                  {item.answer}
+                </p>
+              </article>
+            ))}
           </div>
         </div>
       </SectionFrame>

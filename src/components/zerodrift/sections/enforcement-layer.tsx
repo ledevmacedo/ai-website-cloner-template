@@ -5,10 +5,10 @@ import { SectionFrame } from "../section-frame";
 
 export function EnforcementLayer() {
   return (
-    <SectionFrame>
+    <SectionFrame id="problema">
       <div className="zd-grid rounded-[7px] bg-white px-8 py-16 md:px-12">
         <h2 className="mb-12 text-[40px] font-light leading-none md:text-[56px]">
-          Real-Time Enforcement Layer
+          Formação social, dados e empregabilidade no mesmo fluxo
         </h2>
         <div className="mb-16 grid border-t border-[#d9d9d9] md:grid-cols-3">
           {layerSteps.map((step) => (
@@ -20,7 +20,11 @@ export function EnforcementLayer() {
         </div>
         <div className="space-y-16">
           {layerFeatures.map((feature) => (
-            <article className="grid items-center gap-10 md:grid-cols-2" key={feature.title}>
+            <article
+              className="grid items-center gap-10 md:grid-cols-2"
+              id={feature.eyebrow === "Solução" ? "solucao" : undefined}
+              key={feature.title}
+            >
               <div className={feature.reverse ? "md:order-2" : ""}>
                 <h3 className="max-w-[360px] text-[26px] font-light leading-[1.05] text-[#171719]">
                   {feature.title}
@@ -30,9 +34,9 @@ export function EnforcementLayer() {
                 </p>
                 <a
                   className="mt-6 inline-flex h-9 items-center rounded-[6px] bg-[#171719] px-5 text-[10px] font-bold uppercase text-white"
-                  href="#"
+                  href={feature.eyebrow === "Problema" ? "#solucao" : "#produto"}
                 >
-                  Learn More
+                  Ver próximo passo
                 </a>
               </div>
               <div className={feature.reverse ? "md:order-1" : ""}>

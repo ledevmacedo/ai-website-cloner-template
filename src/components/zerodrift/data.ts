@@ -4,108 +4,140 @@ import type {
   FooterColumn,
   LayerFeature,
   LayerStep,
-  TrustedLogo,
+  NavLink,
 } from "@/types/zerodrift";
 
-import { ZERODRIFT_ASSET_PATH } from "./constants";
+import { PLACEHOLDER_IMAGE } from "./constants";
 
-export const trustedLogos: TrustedLogo[] = [
-  { alt: "Microsoft" },
-  { alt: "Raymond James" },
-  { alt: "Goldman Sachs" },
-  { alt: "IBM" },
-  { alt: "Google" },
+export const navLinks: NavLink[] = [
+  { label: "Problema", href: "#problema" },
+  { label: "Solução", href: "#solucao" },
+  { label: "Produto", href: "#produto" },
+  { label: "Como funciona", href: "#como-funciona" },
+  { label: "Para quem é", href: "#publicos" },
+  { label: "Impacto", href: "#impacto" },
+  { label: "FAQ", href: "#faq" },
 ];
 
 export const layerSteps: LayerStep[] = [
   {
-    title: "Compose",
-    body: "Define your rules",
+    title: "Candidaturas",
+    body: "Triagem, elegibilidade e documentação num funil organizado.",
   },
   {
-    title: "Guard",
-    body: "Enforce at send",
+    title: "Competências",
+    body: "Evidências, progresso e validações acompanham cada formando.",
   },
   {
-    title: "Command",
-    body: "Control and verify",
+    title: "Empregabilidade",
+    body: "Perfis com contexto chegam a empresas parceiras.",
   },
 ];
 
 export const layerFeatures: LayerFeature[] = [
   {
-    eyebrow: "Compose",
-    title: "Configure Once. Enforce Everywhere.",
-    body: "Upload your firm policies on top of SEC rules and FINRA guidance. ZeroDrift turns them into live rules that run on every message, every channel, automatically. You set the standard. The system enforces it.",
-    image: `${ZERODRIFT_ASSET_PATH}13-698a9a9489b318db90f91ecd_6035bd616bfc9ad3f193814dee198ccb_home-illu-1.svg`,
-    imageAlt: "Policy coverage interface",
+    eyebrow: "Problema",
+    title: "O impacto acontece, mas nem sempre fica visível.",
+    body: "Instituições sociais investem tempo, equipa e financiamento em programas de capacitação, mas muita informação importante fica espalhada entre formulários, planilhas, mensagens e PDFs.",
+    image: PLACEHOLDER_IMAGE,
+    imageAlt: "Dados de programa social organizados em interface",
   },
   {
-    eyebrow: "Guard",
-    title: "Fix It Before It's a Problem",
-    body: "Every outbound message is checked before it leaves. If there's an issue, your team sees it instantly and fixes it on the spot. Clean messages fly through. Problems never leave the building.",
-    image: `${ZERODRIFT_ASSET_PATH}14-698a9a94735f622e057384f9_home-illu-2.png`,
-    imageAlt: "Email compliance guard",
+    eyebrow: "Solução",
+    title: "Uma plataforma para ligar formação social, dados e empregabilidade.",
+    body: "O Impact Flow centraliza candidaturas, triagem, acompanhamento pedagógico, evidências de competência e ligação com empresas numa infraestrutura digital.",
+    image: PLACEHOLDER_IMAGE,
+    imageAlt: "Fluxo de acompanhamento de formandos",
     reverse: true,
   },
   {
-    eyebrow: "Command",
-    title: "Compliance Sees What Matters",
-    body: "Your compliance team sees real risks, patterns, and audit trails. Not noise. Issues get resolved at the source so compliance can focus on what actually needs attention.",
-    image: `${ZERODRIFT_ASSET_PATH}15-698a9a945f1f7b62177ac90c_home-illu-3.png`,
-    imageAlt: "Compliance dashboard",
+    eyebrow: "Promessa",
+    title: "Aumentar a empregabilidade através de evidências reais de competência.",
+    body: "Cada participante passa a ter um histórico verificável de progresso, desempenho e validações. A instituição ganha controlo e as empresas avaliam talento com mais segurança.",
+    image: PLACEHOLDER_IMAGE,
+    imageAlt: "Dashboard de impacto e competências",
   },
 ];
 
 export const complianceCards: ComplianceCard[] = [
   {
-    title: "Checked Before Send",
-    body: "Your team sends thousands of messages every week. With ZeroDrift, every one is checked before it reaches clients. Not reviewed days later. Every message. In real-time.",
-    image: `${ZERODRIFT_ASSET_PATH}18-69852a8bcf31ec098f29802a_image-440.avif`,
+    title: "ATS Social",
+    body: "Um funil de candidatura pensado para programas de impacto social, com critérios de elegibilidade, documentação e estado de cada candidato num só lugar.",
+    image: PLACEHOLDER_IMAGE,
   },
   {
-    title: "Policies That Enforce Themselves",
-    body: "Your compliance policies live right where your people write. SEC, FINRA, and firm policy. All active in Outlook, LinkedIn, and everywhere else. No gap between rules and reality.",
-    image: `${ZERODRIFT_ASSET_PATH}19-69852a8b979e8f951aec56c2_image-441.avif`,
+    title: "Passaporte de Competências",
+    body: "Um perfil digital que regista progresso, competências, avaliações, desafios práticos e validações para mostrar o valor real do formando.",
+    image: PLACEHOLDER_IMAGE,
   },
   {
-    title: "AI With Guardrails Built In",
-    body: "Teams draft with ChatGPT and Copilot. ZeroDrift checks every AI-generated message before it goes out. The AI writes fast. ZeroDrift keeps it compliant.",
-    image: `${ZERODRIFT_ASSET_PATH}20-69852a8b01ae940fccc07121_image-442.avif`,
+    title: "Gestão Pedagógica",
+    body: "Uma camada para formadores e mentores acompanharem presença, participação, evolução técnica e sinais de risco ao longo do programa.",
+    image: PLACEHOLDER_IMAGE,
   },
 ];
 
 export const channels: ChannelCard[] = [
   {
-    title: "Email",
-    body: "Catch violations at draft time, not in supervision queues weeks later",
-    icons: ["G", "O"],
+    title: "Fundações e ONGs",
+    body: "Menos trabalho manual, relatórios de impacto mais consistentes e melhor relação com empresas parceiras.",
+    icons: ["FO", "NG"],
   },
   {
-    title: "Social",
-    body: "Check LinkedIn posts before publish",
-    icons: ["in"],
+    title: "Coordenadores de impacto",
+    body: "Visão centralizada do programa, indicadores mais fáceis de acompanhar e menos dependência de planilhas.",
+    icons: ["CI"],
   },
   {
-    title: "Web",
-    body: "Check fund pages and campaign content in the browser",
-    icons: ["M", "C"],
+    title: "Formadores e mentores",
+    body: "Registo simples de evolução, feedback mais estruturado e melhor leitura dos riscos de abandono.",
+    icons: ["FM"],
   },
   {
-    title: "Documents",
-    body: "Review decks, letters, and fact sheets",
-    icons: ["D", "P"],
+    title: "Formandos",
+    body: "Perfil digital com evidências, mais visibilidade profissional e reconhecimento do progresso feito.",
+    icons: ["PF"],
   },
   {
-    title: "AI contents",
-    body: "Apply your rules to ChatGPT and Copilot output before it reaches clients",
-    icons: ["AI", "C"],
+    title: "Empresas e RH",
+    body: "Acesso a perfis pré-validados, menos dependência de CVs estáticos e mais segurança na seleção.",
+    icons: ["RH"],
   },
 ];
 
 export const footerColumns: FooterColumn[] = [
-  { title: "Platform", links: ["Compose", "Guard", "Command"] },
-  { title: "Solutions", links: ["Workflow", "Team", "Industry"] },
-  { title: "Company", links: ["About", "Security", "Careers", "Contact"] },
-  { title: "Legal", links: ["Privacy", "DPA", "GDPR", "Cookies"] },
+  {
+    title: "Produto",
+    links: [
+      { label: "Solução", href: "#solucao" },
+      { label: "Produto", href: "#produto" },
+      { label: "Como funciona", href: "#como-funciona" },
+      { label: "Piloto", href: "#piloto" },
+    ],
+  },
+  {
+    title: "Institucional",
+    links: [
+      { label: "Problema", href: "#problema" },
+      { label: "Para quem é", href: "#publicos" },
+      { label: "Impacto", href: "#impacto" },
+      { label: "Mercado", href: "#mercado" },
+    ],
+  },
+  {
+    title: "Modelo",
+    links: [
+      { label: "Modelo de negócio", href: "#modelo" },
+      { label: "FAQ", href: "#faq" },
+      { label: "Contato", href: "#contato" },
+    ],
+  },
+  {
+    title: "Piloto",
+    links: [
+      { label: "ATS Social", href: "#produto" },
+      { label: "Passaporte", href: "#produto" },
+      { label: "Validação", href: "#piloto" },
+    ],
+  },
 ];

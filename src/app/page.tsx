@@ -1,5 +1,5 @@
-import { ZeroDriftPage } from "@/components/zerodrift/zerodrift-page";
+import { ImpactFlowPage } from "@/components/zerodrift/impact-flow-page";
 
 export default function Home() {
-  return <ZeroDriftPage />;
+  return <ImpactFlowPage />;
 }

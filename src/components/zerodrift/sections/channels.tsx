@@ -1,19 +1,19 @@
 import { channels } from "../data";
 import { SectionFrame } from "../section-frame";
 
-const channelTabs = ["Workflow", "Team", "Industry"];
+const channelTabs = ["Instituições", "Formandos", "Empresas"];
 
 export function Channels() {
   return (
-    <SectionFrame className="mt-8">
+    <SectionFrame className="mt-8" id="publicos">
       <div className="zd-grid rounded-[7px] bg-white px-8 py-12">
         <div className="grid gap-10 md:grid-cols-[0.9fr_1.3fr]">
           <div className="flex flex-col justify-center">
             <h2 className="max-w-[380px] text-[38px] font-light leading-[1.05]">
-              Every Channel. Every Person. Enforced.
+              Para quem é o Impact Flow
             </h2>
             <p className="mt-5 max-w-[440px] text-[15px] leading-[1.45] text-[#747780]">
-              Your whole firm communicates with confidence. Issues get fixed at the source. Compliance focuses on what matters.
+              A plataforma conecta quem financia, quem coordena, quem forma, quem aprende e quem contrata dentro da mesma operação.
             </p>
             <div className="mt-7 flex gap-3">
               {channelTabs.map((tab) => (

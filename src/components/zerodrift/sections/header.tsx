@@ -1,46 +1,35 @@
-import Image from "next/image";
-import { ChevronDown, Menu } from "lucide-react";
+import Link from "next/link";
+import { Menu } from "lucide-react";
 
-import { ZERODRIFT_LOGO } from "../constants";
-
-const dropdownLinks = ["Platform", "Solutions"];
-const primaryLinks = ["Developers", "Security", "Company"];
+import { BRAND_NAME } from "../constants";
+import { navLinks } from "../data";
 
 export function Header() {
   return (
     <header className="mx-auto flex h-[86px] w-full max-w-[1360px] items-center justify-between px-5 md:px-0">
-      <Image
-        src={ZERODRIFT_LOGO}
-        alt="ZeroDrift"
-        width={184}
-        height={31}
-        priority
-      />
-      <nav className="hidden items-center gap-10 text-[16px] font-normal text-[#0b1020] md:flex">
-        {dropdownLinks.map((item) => (
-          <a
-            className="flex items-center gap-2 hover:text-[#f15b37]"
-            href="#"
-            key={item}
-          >
-            {item}
-            <ChevronDown aria-hidden className="size-4" />
-          </a>
-        ))}
-        {primaryLinks.map((item) => (
-          <a className="hover:text-[#f15b37]" href="#" key={item}>
-            {item}
+      <Link className="flex items-center gap-3" href="/" aria-label="Impact Flow home">
+        <span className="inline-flex size-9 items-center justify-center rounded-[8px] bg-[#171719] text-[13px] font-bold text-white">
+          IF
+        </span>
+        <span className="text-[24px] font-medium leading-none text-[#171719]">
+          {BRAND_NAME}
+        </span>
+      </Link>
+      <nav className="hidden items-center gap-7 text-[15px] font-normal text-[#0b1020] md:flex">
+        {navLinks.slice(0, 6).map((item) => (
+          <a className="hover:text-[#f15b37]" href={item.href} key={item.label}>
+            {item.label}
           </a>
         ))}
       </nav>
       <a
         className="hidden h-12 items-center justify-center rounded-[8px] bg-[#171719] px-7 text-[12px] font-bold uppercase text-white md:inline-flex"
-        href="#demo"
+        href="#piloto"
       >
-        Get Demo
+        Validar piloto
       </a>
       <button
-        aria-label="Open menu"
+        aria-label="Abrir menu"
         className="inline-flex size-10 items-center justify-center rounded-[8px] md:hidden"
         type="button"
       >

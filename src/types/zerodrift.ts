@@ -1,6 +1,6 @@
-export interface TrustedLogo {
-  src?: string;
-  alt: string;
+export interface NavLink {
+  label: string;
+  href: string;
 }
 
 export interface LayerStep {
@@ -31,5 +31,5 @@ export interface ChannelCard {
 
 export interface FooterColumn {
   title: string;
-  links: string[];
+  links: NavLink[];
 }

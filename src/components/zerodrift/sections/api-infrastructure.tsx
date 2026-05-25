@@ -1,51 +1,61 @@
-import { CodePanel } from "../code-panel";
 import { SectionFrame } from "../section-frame";
 
-const requestExample = `curl -X POST "api.zerodrift.ai/v1/validate" \\
-  -H "Authorization: Bearer zd_key_..." \\
-  -d '{
-    "text": "Our fund will outperform the market.",
-    "document_type": "investor_letter",
-    "audience": "retail_US",
-    "rules": ["sec","finra"]
-  }'`;
+const impactItems = [
+  "Tempo administrativo poupado.",
+  "Taxa de conclusão.",
+  "Progresso por competências.",
+  "Perfis com evidências validadas.",
+  "Empresas parceiras ativas.",
+  "Contratação pós-formação.",
+];
 
-const responseExample = `{
-  "status": "warning",
-  "evidence_id": "ev_8f3k2j",
-  "checks": { "passed": 12, "failed": 1 },
-  "violations": [{
-    "rule": "no_performance_projection",
-    "ref": "FINRA 2210(d)(1)(F)",
-    "severity": "high"
-  }]
-}`;
+const businessItems = [
+  "Subscrição SaaS para instituições.",
+  "Setup e implementação inicial.",
+  "Formação e suporte premium.",
+  "Licenças para empresas recrutadoras.",
+  "Relatórios agregados em fases futuras.",
+];
 
 export function ApiInfrastructure() {
   return (
-    <SectionFrame className="mt-8">
+    <SectionFrame className="mt-8" id="mercado">
       <div className="zd-grid rounded-[7px] bg-white px-8 py-12">
-        <div className="grid gap-10 md:grid-cols-2">
+        <div className="grid gap-10 md:grid-cols-[0.9fr_1.1fr]">
           <div className="flex flex-col justify-center">
-            <h2 className="max-w-[380px] text-[38px] font-light leading-[1.05]">
-              Build on ZeroDrift Infrastructure
+            <h2 className="max-w-[480px] text-[38px] font-light leading-[1.05]">
+              O setor social precisa de ferramentas próprias para provar resultado
             </h2>
-            <p className="mt-5 max-w-[440px] text-[15px] leading-[1.45] text-[#747780]">
-              Add compliance checks to any AI agent, copilot, or internal tool with one API. Every piece of content validated against regulations and firm policies before it reaches users.
+            <p className="mt-5 max-w-[500px] text-[15px] leading-[1.45] text-[#747780]">
+              O Impact Flow posiciona dados confiáveis entre formação social,
+              prestação de contas e empregabilidade.
             </p>
             <a
               className="mt-7 inline-flex h-9 w-fit items-center rounded-[6px] bg-[#171719] px-5 text-[10px] font-bold uppercase text-white"
-              href="#"
+              href="#modelo"
             >
-              Learn More
+              Ver modelo
             </a>
           </div>
-          <div className="space-y-5">
-            <CodePanel title="Request">{requestExample}</CodePanel>
-            <CodePanel title="Response">{responseExample}</CodePanel>
+          <div className="grid gap-4 md:grid-cols-2" id="modelo">
+            <InfoList title="Indicadores acompanháveis" items={impactItems} />
+            <InfoList title="Modelo de negócio" items={businessItems} />
           </div>
         </div>
       </div>
     </SectionFrame>
+  );
+}
+
+function InfoList({ title, items }: Readonly<{ title: string; items: string[] }>) {
+  return (
+    <article className="rounded-[8px] bg-[#f5f5f5] p-5">
+      <h3 className="text-[16px] font-medium text-[#171719]">{title}</h3>
+      <ul className="mt-4 space-y-3 text-[13px] leading-[1.4] text-[#747780]">
+        {items.map((item) => (
+          <li key={item}>{item}</li>
+        ))}
+      </ul>
+    </article>
   );
 }

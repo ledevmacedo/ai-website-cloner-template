@@ -5,10 +5,10 @@ import { SectionFrame } from "../section-frame";
 
 export function ComplianceLooks() {
   return (
-    <SectionFrame className="mt-8">
+    <SectionFrame className="mt-8" id="produto">
       <div className="rounded-[7px] bg-white px-8 py-14">
         <h2 className="mb-10 text-center text-[34px] font-light leading-none">
-          What Fast and Compliant Looks Like
+          O que a plataforma organiza
         </h2>
         <div className="grid gap-8 md:grid-cols-3">
           {complianceCards.map((card) => (
