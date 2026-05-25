@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 import { SectionFrame } from "../section-frame";
 
 const impactItems = [
@@ -30,12 +32,12 @@ export function ApiInfrastructure() {
               O Impact Flow posiciona dados confiáveis entre formação social,
               prestação de contas e empregabilidade.
             </p>
-            <a
+            <Link
               className="mt-7 inline-flex h-9 w-fit items-center rounded-[6px] bg-[#171719] px-5 text-[10px] font-bold uppercase text-white"
-              href="#modelo"
+              href="/modelo-negocio"
             >
               Ver modelo
-            </a>
+            </Link>
           </div>
           <div className="grid gap-4 md:grid-cols-2" id="modelo">
             <InfoList title="Indicadores acompanháveis" items={impactItems} />
@@ -51,7 +53,7 @@ function InfoList({ title, items }: Readonly<{ title: string; items: string[] }>
   return (
     <article className="rounded-[8px] bg-[#f5f5f5] p-5">
       <h3 className="text-[16px] font-medium text-[#171719]">{title}</h3>
-      <ul className="mt-4 space-y-3 text-[13px] leading-[1.4] text-[#747780]">
+      <ul className="mt-4 flex flex-col gap-3 text-[13px] leading-[1.4] text-[#747780]">
         {items.map((item) => (
           <li key={item}>{item}</li>
         ))}

@@ -32,12 +32,12 @@ export function Footer() {
                 <h3 className="mb-4 text-[13px] font-medium text-[#171719]">
                   {column.title}
                 </h3>
-                <ul className="space-y-3 text-[13px] text-[#747780]">
+                <ul className="flex flex-col gap-3 text-[13px] text-[#747780]">
                   {column.links.map((link) => (
                     <li key={link.label}>
-                      <a className="hover:text-[#171719]" href={link.href}>
+                      <Link className="hover:text-[#171719]" href={link.href}>
                         {link.label}
-                      </a>
+                      </Link>
                     </li>
                   ))}
                 </ul>
@@ -48,9 +48,9 @@ export function Footer() {
         <div className="mt-10 grid gap-8 border-t border-[#ececec] pt-8 text-[13px] text-[#747780] md:grid-cols-[1fr_1fr]">
           <p>
             MVP em validação com foco em ATS Social + Passaporte de Competências.{" "}
-            <a className="underline" href="#piloto">
+            <Link className="underline" href="/piloto">
               Falar sobre piloto.
-            </a>
+            </Link>
           </p>
           <div className="grid gap-2 md:grid-cols-3">
             <p>

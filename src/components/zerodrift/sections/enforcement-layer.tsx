@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 import { layerFeatures, layerSteps } from "../data";
 import { SectionFrame } from "../section-frame";
@@ -18,7 +19,7 @@ export function EnforcementLayer() {
             </div>
           ))}
         </div>
-        <div className="space-y-16">
+        <div className="flex flex-col gap-16">
           {layerFeatures.map((feature) => (
             <article
               className="grid items-center gap-10 md:grid-cols-2"
@@ -32,12 +33,12 @@ export function EnforcementLayer() {
                 <p className="mt-4 max-w-[480px] text-[16px] leading-[1.45] text-[#6c7078]">
                   {feature.body}
                 </p>
-                <a
+                <Link
                   className="mt-6 inline-flex h-9 items-center rounded-[6px] bg-[#171719] px-5 text-[10px] font-bold uppercase text-white"
-                  href={feature.eyebrow === "Problema" ? "#solucao" : "#produto"}
+                  href={feature.eyebrow === "Problema" ? "/solucao" : "/produto"}
                 >
                   Ver próximo passo
-                </a>
+                </Link>
               </div>
               <div className={feature.reverse ? "md:order-1" : ""}>
                 <Image

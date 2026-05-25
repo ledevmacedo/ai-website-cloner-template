@@ -10,13 +10,13 @@ import type {
 import { PLACEHOLDER_IMAGE } from "./constants";
 
 export const navLinks: NavLink[] = [
-  { label: "Problema", href: "#problema" },
-  { label: "Solução", href: "#solucao" },
-  { label: "Produto", href: "#produto" },
-  { label: "Como funciona", href: "#como-funciona" },
-  { label: "Para quem é", href: "#publicos" },
-  { label: "Impacto", href: "#impacto" },
-  { label: "FAQ", href: "#faq" },
+  { label: "Problema", href: "/problema" },
+  { label: "Solução", href: "/solucao" },
+  { label: "Produto", href: "/produto" },
+  { label: "Como funciona", href: "/como-funciona" },
+  { label: "Para quem é", href: "/publicos" },
+  { label: "Impacto", href: "/impacto" },
+  { label: "FAQ", href: "/faq" },
 ];
 
 export const layerSteps: LayerStep[] = [
@@ -109,35 +109,36 @@ export const footerColumns: FooterColumn[] = [
   {
     title: "Produto",
     links: [
-      { label: "Solução", href: "#solucao" },
-      { label: "Produto", href: "#produto" },
-      { label: "Como funciona", href: "#como-funciona" },
-      { label: "Piloto", href: "#piloto" },
+      { label: "Solução", href: "/solucao" },
+      { label: "Produto", href: "/produto" },
+      { label: "Como funciona", href: "/como-funciona" },
+      { label: "Piloto", href: "/piloto" },
     ],
   },
   {
     title: "Institucional",
     links: [
-      { label: "Problema", href: "#problema" },
-      { label: "Para quem é", href: "#publicos" },
-      { label: "Impacto", href: "#impacto" },
-      { label: "Mercado", href: "#mercado" },
+      { label: "Problema", href: "/problema" },
+      { label: "Para quem é", href: "/publicos" },
+      { label: "Impacto", href: "/impacto" },
+      { label: "Mercado", href: "/mercado" },
     ],
   },
   {
     title: "Modelo",
     links: [
-      { label: "Modelo de negócio", href: "#modelo" },
-      { label: "FAQ", href: "#faq" },
-      { label: "Contato", href: "#contato" },
+      { label: "Modelo de negócio", href: "/modelo-negocio" },
+      { label: "FAQ", href: "/faq" },
+      { label: "Contato", href: "/contato" },
+      { label: "Mapa do site", href: "/mapa-do-site" },
     ],
   },
   {
     title: "Piloto",
     links: [
-      { label: "ATS Social", href: "#produto" },
-      { label: "Passaporte", href: "#produto" },
-      { label: "Validação", href: "#piloto" },
+      { label: "ATS Social", href: "/produto" },
+      { label: "Passaporte", href: "/produto" },
+      { label: "Validação", href: "/piloto" },
     ],
   },
 ];

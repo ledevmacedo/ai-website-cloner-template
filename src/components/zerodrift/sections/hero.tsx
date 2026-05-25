@@ -31,7 +31,9 @@ export function Hero() {
           </h1>
           <div className="mt-12 flex flex-wrap gap-4">
             <ButtonLink>Quero validar um piloto</ButtonLink>
-            <ButtonLink href="#como-funciona">Ver como funciona</ButtonLink>
+            <ButtonLink href="/como-funciona" variant="secondary">
+              Ver como funciona
+            </ButtonLink>
           </div>
         </div>
       </div>
