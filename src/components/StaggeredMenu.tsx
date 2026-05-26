@@ -37,6 +37,18 @@ type MenuStyle = React.CSSProperties & {
   '--sm-accent'?: string;
 };
 
+type ToggleTextLine = {
+  id: string;
+  label: string;
+};
+
+const EMPTY_MENU_ITEMS: StaggeredMenuItem[] = [];
+const EMPTY_SOCIAL_ITEMS: StaggeredMenuSocialItem[] = [];
+const INITIAL_TOGGLE_TEXT_LINES: ToggleTextLine[] = [
+  { id: 'initial-menu', label: 'Menu' },
+  { id: 'initial-close', label: 'Close' },
+];
+
 const menuNumberOpacity = (value: number): gsap.TweenVars => ({
   '--sm-num-opacity': value,
 });
@@ -44,8 +56,8 @@ const menuNumberOpacity = (value: number): gsap.TweenVars => ({
 export const StaggeredMenu: React.FC<StaggeredMenuProps> = ({
   position = 'right',
   colors = ['#B497CF', '#5227FF'],
-  items = [],
-  socialItems = [],
+  items = EMPTY_MENU_ITEMS,
+  socialItems = EMPTY_SOCIAL_ITEMS,
   displaySocials = true,
   displayItemNumbering = true,
   className,
@@ -73,7 +85,7 @@ export const StaggeredMenu: React.FC<StaggeredMenuProps> = ({
 
   const textInnerRef = useRef<HTMLSpanElement | null>(null);
   const textWrapRef = useRef<HTMLSpanElement | null>(null);
-  const [textLines, setTextLines] = useState<string[]>(['Menu', 'Close']);
+  const [textLines, setTextLines] = useState<ToggleTextLine[]>(INITIAL_TOGGLE_TEXT_LINES);
 
   const openTlRef = useRef<gsap.core.Timeline | null>(null);
   const closeTweenRef = useRef<gsap.core.Tween | null>(null);
@@ -172,14 +184,14 @@ export const StaggeredMenu: React.FC<StaggeredMenuProps> = ({
 
       tl.to(
         itemEls,
-        { yPercent: 0, rotate: 0, duration: 1, ease: 'power4.out', stagger: { each: 0.1, from: 'start' } },
+        { yPercent: 0, rotate: 0, duration: 0.75, ease: 'power4.out', stagger: { each: 0.065, from: 'start' } },
         itemsStart
       );
 
       if (numberEls.length) {
         tl.to(
           numberEls,
-          { duration: 0.6, ease: 'power2.out', ...menuNumberOpacity(1), stagger: { each: 0.08, from: 'start' } },
+          { duration: 0.45, ease: 'power2.out', ...menuNumberOpacity(1), stagger: { each: 0.05, from: 'start' } },
           itemsStart + 0.1
         );
       }
@@ -332,7 +344,7 @@ export const StaggeredMenu: React.FC<StaggeredMenuProps> = ({
     if (last !== targetLabel) seq.push(targetLabel);
     seq.push(targetLabel);
 
-    setTextLines(seq);
+    setTextLines(seq.map((label, index) => ({ id: `${opening ? 'open' : 'close'}-${index}-${label}`, label })));
     gsap.set(inner, { yPercent: 0 });
 
     const lineCount = seq.length;
@@ -419,9 +431,9 @@ export const StaggeredMenu: React.FC<StaggeredMenuProps> = ({
               const mid = Math.floor(arr.length / 2);
               arr.splice(mid, 1);
             }
-            return arr.map((c, i) => (
+            return arr.map((c) => (
               <div
-                key={i}
+                key={c}
                 className="sm-prelayer absolute top-0 right-0 h-full w-full translate-x-0"
                 style={{ background: c }}
               />
@@ -466,9 +478,9 @@ export const StaggeredMenu: React.FC<StaggeredMenuProps> = ({
               aria-hidden="true"
             >
               <span ref={textInnerRef} className="sm-toggle-textInner flex flex-col leading-none">
-                {textLines.map((l, i) => (
-                  <span className="sm-toggle-line block h-[1em] leading-none" key={i}>
-                    {l}
+                {textLines.map((line) => (
+                  <span className="sm-toggle-line block h-[1em] leading-none" key={line.id}>
+                    {line.label}
                   </span>
                 ))}
               </span>
@@ -476,7 +488,7 @@ export const StaggeredMenu: React.FC<StaggeredMenuProps> = ({
 
             <span
               ref={iconRef}
-              className="sm-icon relative w-[14px] h-[14px] shrink-0 inline-flex items-center justify-center [will-change:transform]"
+              className="sm-icon relative size-[14px] shrink-0 inline-flex items-center justify-center [will-change:transform]"
               aria-hidden="true"
             >
               <span
@@ -495,18 +507,17 @@ export const StaggeredMenu: React.FC<StaggeredMenuProps> = ({
           id="staggered-menu-panel"
           ref={panelRef}
           className="staggered-menu-panel absolute top-0 right-0 h-full bg-white flex flex-col p-[6em_2em_2em_2em] overflow-y-auto z-10 backdrop-blur-[12px] pointer-events-auto"
-          style={{ WebkitBackdropFilter: 'blur(12px)' }}
+          style={{ WebkitBackdropFilter: 'blur(8px)' }}
           aria-hidden={!open}
         >
           <div className="sm-panel-inner flex-1 flex flex-col gap-5">
             <ul
               className="sm-panel-list list-none m-0 p-0 flex flex-col gap-2"
-              role="list"
               data-numbering={displayItemNumbering || undefined}
             >
               {items && items.length ? (
                 items.map((it, idx) => (
-                  <li className="sm-panel-itemWrap relative overflow-hidden leading-none" key={it.label + idx}>
+                  <li className="sm-panel-itemWrap relative overflow-hidden leading-none" key={it.link}>
                     <a
                       className="sm-panel-item relative text-black font-semibold text-[4rem] cursor-pointer leading-none tracking-normal uppercase transition-[background,color] duration-150 ease-linear inline-block no-underline pr-[1.4em]"
                       href={it.link}
@@ -536,10 +547,9 @@ export const StaggeredMenu: React.FC<StaggeredMenuProps> = ({
                 <h3 className="sm-socials-title m-0 text-base font-medium [color:var(--sm-accent,#ff0000)]">Socials</h3>
                 <ul
                   className="sm-socials-list list-none m-0 p-0 flex flex-row items-center gap-4 flex-wrap"
-                  role="list"
                 >
-                  {socialItems.map((s, i) => (
-                    <li key={s.label + i} className="sm-socials-item">
+                  {socialItems.map((s) => (
+                    <li key={s.link} className="sm-socials-item">
                       <a
                         href={s.link}
                         target="_blank"
@@ -573,7 +583,7 @@ export const StaggeredMenu: React.FC<StaggeredMenuProps> = ({
 .sm-scope .sm-panel-itemWrap { position: relative; overflow: hidden; line-height: 1; }
 .sm-scope .sm-icon-line { position: absolute; left: 50%; top: 50%; width: 100%; height: 2px; background: currentColor; border-radius: 2px; transform: translate(-50%, -50%); will-change: transform; }
 .sm-scope .sm-line { display: none !important; }
-.sm-scope .staggered-menu-panel { position: absolute; top: 0; right: 0; width: clamp(260px, 38vw, 420px); height: 100%; background: white; backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); display: flex; flex-direction: column; padding: 6em 2em 2em 2em; overflow-y: auto; z-index: 10; }
+.sm-scope .staggered-menu-panel { position: absolute; top: 0; right: 0; width: clamp(260px, 38vw, 420px); height: 100%; background: white; backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); display: flex; flex-direction: column; padding: 6em 2em 2em 2em; overflow-y: auto; z-index: 10; }
 .sm-scope [data-position='left'] .staggered-menu-panel { right: auto; left: 0; }
 .sm-scope .sm-prelayers { position: absolute; top: 0; right: 0; bottom: 0; width: clamp(260px, 38vw, 420px); pointer-events: none; z-index: 5; }
 .sm-scope [data-position='left'] .sm-prelayers { right: auto; left: 0; }
@@ -592,13 +602,13 @@ export const StaggeredMenu: React.FC<StaggeredMenuProps> = ({
 .sm-scope .sm-socials-link:hover { color: var(--sm-accent, #ff0000); }
 .sm-scope .sm-panel-title { margin: 0; font-size: 1rem; font-weight: 600; color: #fff; text-transform: uppercase; }
 .sm-scope .sm-panel-list { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 0.5rem; }
-.sm-scope .sm-panel-item { position: relative; color: #000; font-weight: 600; font-size: clamp(2.1rem, 11vw, 4rem); cursor: pointer; line-height: 1; letter-spacing: 0; text-transform: uppercase; transition: background 0.25s, color 0.25s; display: inline-block; text-decoration: none; padding-right: 1.4em; }
+.sm-scope .sm-panel-item { position: relative; color: #000; font-weight: 600; font-size: clamp(2rem, 5vw, 4rem); cursor: pointer; line-height: 1; letter-spacing: 0; text-transform: uppercase; transition: background 0.25s, color 0.25s; display: inline-block; text-decoration: none; padding-right: 1em; }
 .sm-scope .sm-panel-itemLabel { display: inline-block; will-change: transform; transform-origin: 50% 100%; }
 .sm-scope .sm-panel-item:hover { color: var(--sm-accent, #ff0000); }
 .sm-scope .sm-panel-list[data-numbering] { counter-reset: smItem; }
-.sm-scope .sm-panel-list[data-numbering] .sm-panel-item::after { counter-increment: smItem; content: counter(smItem, decimal-leading-zero); position: absolute; top: 0.1em; right: 3.2em; font-size: 18px; font-weight: 400; color: var(--sm-accent, #ff0000); letter-spacing: 0; pointer-events: none; user-select: none; opacity: var(--sm-num-opacity, 0); }
+.sm-scope .sm-panel-list[data-numbering] .sm-panel-item::after { counter-increment: smItem; content: counter(smItem, decimal-leading-zero); position: absolute; top: 0.05em; right: 0; font-size: clamp(0.8rem, 1.6vw, 1.125rem); font-weight: 400; color: var(--sm-accent, #ff0000); letter-spacing: 0; pointer-events: none; user-select: none; opacity: var(--sm-num-opacity, 0); }
 @media (max-width: 1024px) { .sm-scope .staggered-menu-panel { width: 100%; left: 0; right: 0; } .sm-scope .staggered-menu-wrapper[data-open] .sm-logo-img { filter: invert(100%); } }
-@media (max-width: 640px) { .sm-scope .staggered-menu-panel { width: 100%; left: 0; right: 0; } .sm-scope .staggered-menu-wrapper[data-open] .sm-logo-img { filter: invert(100%); } }
+@media (max-width: 640px) { .sm-scope .staggered-menu-panel { width: 100%; left: 0; right: 0; padding: 5.5em 1.5em 2em 1.5em; } .sm-scope .sm-panel-list { gap: 0.45rem; } .sm-scope .sm-panel-item { font-size: clamp(1.9rem, 8.4vw, 2.5rem); padding-right: 0.9em; } .sm-scope .sm-panel-list[data-numbering] .sm-panel-item::after { font-size: 0.95rem; } .sm-scope .staggered-menu-wrapper[data-open] .sm-logo-img { filter: invert(100%); } }
       `}</style>
     </div>
   );
