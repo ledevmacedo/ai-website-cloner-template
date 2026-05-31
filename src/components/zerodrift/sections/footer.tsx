@@ -1,6 +1,6 @@
+import Image from "next/image";
 import Link from "next/link";
 
-import { BRAND_NAME } from "../constants";
 import { footerColumns } from "../data";
 
 export function Footer() {
@@ -9,13 +9,14 @@ export function Footer() {
       <div className="rounded-[7px] bg-white px-8 py-10 md:px-12">
         <div className="grid gap-10 md:grid-cols-[1.4fr_2fr]">
           <div>
-            <Link className="flex items-center gap-3" href="/" aria-label="Impact Flow home">
-              <span className="inline-flex size-9 items-center justify-center rounded-[8px] bg-[#171719] text-[13px] font-bold text-white">
-                IF
-              </span>
-              <span className="text-[24px] font-medium leading-none text-[#171719]">
-                {BRAND_NAME}
-              </span>
+            <Link className="flex items-center" href="/" aria-label="Impact Flow home">
+              <Image
+                alt="Impact Flow"
+                className="h-10 w-auto"
+                height={200}
+                src="/logo.svg"
+                width={900}
+              />
             </Link>
             <div className="mt-8 text-[14px] leading-[1.5] text-[#555]">
               <p className="font-medium text-[#171719]">

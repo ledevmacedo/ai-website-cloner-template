@@ -1,7 +1,7 @@
+import Image from "next/image";
 import Link from "next/link";
 
 import StaggeredMenu from "@/components/StaggeredMenu";
-import { BRAND_NAME } from "../constants";
 import { navLinks } from "../data";
 
 const menuItems = [
@@ -23,13 +23,15 @@ const menuItems = [
 export function Header() {
   return (
     <header className="mx-auto flex h-[86px] w-full max-w-[1360px] items-center justify-between px-5 md:px-0">
-      <Link className="flex items-center gap-3" href="/" aria-label="Impact Flow home">
-        <span className="inline-flex size-9 items-center justify-center rounded-[8px] bg-[#6F5BEF] text-[13px] font-bold text-white">
-          IF
-        </span>
-        <span className="text-[24px] font-medium leading-none text-[#171719]">
-          {BRAND_NAME}
-        </span>
+      <Link className="flex items-center" href="/" aria-label="Impact Flow home">
+        <Image
+          alt="Impact Flow"
+          className="h-8 w-auto"
+          height={200}
+          priority
+          src="/logo.svg"
+          width={900}
+        />
       </Link>
       <nav className="hidden items-center gap-7 text-[15px] font-normal text-[#0b1020] md:flex">
         {navLinks.slice(0, 6).map((item) => (
