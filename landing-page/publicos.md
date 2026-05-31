@@ -27,6 +27,7 @@ Para quem precisa acompanhar turmas, consolidar dados e demonstrar resultados de
 
 - Visão centralizada do programa.
 - Indicadores mais fáceis de acompanhar.
+- Avaliações e feedbacks em histórico. 
 - Menos dependência de planilhas e mensagens soltas.
 
 ---
@@ -51,6 +52,7 @@ Para jovens e adultos em requalificação que precisam mostrar competências rea
 
 - Perfil digital com evidências.
 - Mais visibilidade profissional.
+- Centralidade das necessidades durante o fluxo.
 - Reconhecimento do progresso feito durante a formação.
 
 ---

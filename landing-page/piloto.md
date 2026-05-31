@@ -2,7 +2,7 @@
 
 ## Começamos pelo núcleo que prova valor mais rápido.
 
-O MVP inicial concentra-se em dois módulos: ATS Social e Passaporte de Competências.
+O MVP inicial concentra-se em dois módulos: ATS Social e Perfil de Competências.
 
 Este recorte reduz complexidade e permite validar a operação em contexto real antes de expandir para módulos mais avançados.
 
@@ -11,7 +11,7 @@ Este recorte reduz complexidade e permite validar a operação em contexto real 
 ## Escopo inicial
 
 - ATS Social para triagem, elegibilidade e gestão do funil de candidaturas.
-- Passaporte de Competências para registo estruturado de progresso, evidências e validações.
+- Perfil de Competências para registo estruturado de progresso, evidências e validações.
 
 ---
 
@@ -30,6 +30,7 @@ Redução do tempo administrativo da coordenação.
 ## O que queremos validar
 
 - Se a instituição ganha tempo na operação.
+- Se a instituição consegue ter uma gestão mais eficaz da turma.
 - Se os dados ficam mais completos e confiáveis.
 - Se os formandos conseguem construir perfis mais claros.
 - Se as empresas percebem valor em perfis validados por evidências.

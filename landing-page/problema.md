@@ -28,7 +28,7 @@ Para empresas, a falta de contexto aumenta o risco da contratação. Para financ
 
 ---
 
-## Consequências práticas
+## Consequências práticas do problema
 
 - Mais horas administrativas para a equipa.
 - Menos confiança nos dados do programa.

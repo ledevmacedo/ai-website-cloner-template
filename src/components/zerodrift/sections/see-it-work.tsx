@@ -8,15 +8,15 @@ export function SeeItWork() {
     },
     {
       title: "2. Acompanhamento Pedagógico",
-      body: "Formadores registam presença, progresso, desafios práticos e avaliações ao longo da turma.",
+      body: "Formadores registam presença, progresso, desafios práticos e avaliações. A equipa identifica quem precisa de apoio e personaliza o que for preciso.",
     },
     {
-      title: "3. Passaporte de Competências",
-      body: "Cada formando constrói um perfil digital com evidências técnicas e comportamentais.",
+      title: "3. Perfil de Competências",
+      body: "Cada formando constrói um perfil digital com evidências técnicas e comportamentais, validado por dados, mentores e atividades reais.",
     },
     {
       title: "4. Ligação ao Mercado",
-      body: "Empresas acedem a perfis mais claros, com contexto e histórico de desempenho.",
+      body: "Empresas acedem a perfis mais claros, com contexto e histórico de desempenho personalizado e com clareza.",
     },
   ];
 

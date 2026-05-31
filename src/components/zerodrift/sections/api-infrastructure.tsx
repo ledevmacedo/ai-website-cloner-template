@@ -8,15 +8,17 @@ const impactItems = [
   "Progresso por competências.",
   "Perfis com evidências validadas.",
   "Empresas parceiras ativas.",
+  "Oportunidades geradas.",
   "Contratação pós-formação.",
 ];
 
 const businessItems = [
   "Subscrição SaaS para instituições.",
   "Setup e implementação inicial.",
-  "Formação e suporte premium.",
+  "Serviços de formação e suporte premium.",
   "Licenças para empresas recrutadoras.",
-  "Relatórios agregados em fases futuras.",
+  "Relatórios agregados e anonimizados em fases futuras.",
+  "Selos para instituições ou empresas.",
 ];
 
 export function ApiInfrastructure() {

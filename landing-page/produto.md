@@ -17,10 +17,11 @@ Permite gerir candidaturas, critérios de elegibilidade, documentação e estado
 - Menos tempo gasto em triagem manual.
 - Menos candidatos perdidos por falta de seguimento.
 - Mais controlo sobre critérios sociais e documentação.
+- Eficiencia no processo.
 
 ---
 
-## Passaporte de Competências
+## Perfil de Competências
 
 Um perfil digital que mostra o valor real do formando.
 
@@ -28,7 +29,7 @@ Regista progresso, competências, avaliações, desafios práticos e validaçõe
 
 ### Benefícios
 
-- Histórico verificável de competências.
+- Histórico verificável de competências e feedbacks.
 - Mais visibilidade perante parceiros e empregadores.
 - Melhor transição entre formação e oportunidade.
 
@@ -38,13 +39,14 @@ Regista progresso, competências, avaliações, desafios práticos e validaçõe
 
 Uma camada de acompanhamento para formadores e mentores.
 
-Ajuda a acompanhar presença, participação, evolução técnica e sinais de risco ao longo do programa.
+Ajuda a acompanhar presença, participação, evolução técnica e sinais de risco ao longo do programa. Abrange também oportunidades de focar em softskills e feedbacks especificos. 
 
 ### Benefícios
 
 - Acompanhamento mais próximo da turma.
-- Dados pedagógicos menos dispersos.
+- Dados pedagógicos menos dispersos e mais ricos.
 - Base mais clara para relatórios e melhorias do programa.
+- Melhor posicionamento perante ao mercado.
 
 ---
 
@@ -65,6 +67,7 @@ Empresas parceiras podem consultar perfis de formandos com evidências reais de 
 ## Recursos transversais
 
 - Segurança e conformidade com RGPD.
+- Fluxo intuitivo e com acessibilidade para todos. 
 - Histórico e rastreabilidade de ações.
 - Dashboards de impacto para acompanhamento.
 - Possibilidade futura de integração com sistemas de RH.

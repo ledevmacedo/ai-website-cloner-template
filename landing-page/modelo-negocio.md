@@ -15,6 +15,7 @@ No início, o foco está em validação com instituições parceiras. Com o prod
 - Serviços de formação e suporte premium.
 - Licenças para empresas recrutadoras.
 - Relatórios agregados e anonimizados em fases futuras.
+- Selos para instituições ou empresas.
 
 ---
 
@@ -38,7 +39,7 @@ Para grandes fundações e redes, com integração, API, suporte dedicado e ativ
 
 - Se empresas pagam por dados de desempenho validados como alternativa ao recrutamento tradicional.
 - Se fundações conseguem converter a poupança de tempo operacional em orçamento para software.
-- Se o Passaporte de Competências se torna uma referência útil para seleção baseada em mérito.
+- Se o Perfil de Competências se torna uma referência útil para seleção baseada em mérito.
 
 ---
 

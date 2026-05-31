@@ -35,7 +35,7 @@ Receber apresentação do projeto.
 
 ## Mensagem curta para formulário
 
-Conte um pouco sobre o programa que quer validar. A ideia é perceber se o Impact Flow pode ajudar numa turma, numa fase do processo ou num piloto mais completo.
+Conte um pouco sobre o programa que quer validar. A ideia é perceber se o Impact Flow pode te ajudar a organizar e ter sucesso nesso fluxo todo, numa fase do processo ou num piloto mais completo.
 
 ---
 

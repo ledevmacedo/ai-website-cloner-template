@@ -38,7 +38,7 @@ export const layerFeatures: LayerFeature[] = [
   {
     eyebrow: "Problema",
     title: "O impacto acontece, mas nem sempre fica visível.",
-    body: "Instituições sociais investem tempo, equipa e financiamento em programas de capacitação, mas muita informação importante fica espalhada entre formulários, planilhas, mensagens e PDFs.",
+    body: "Instituições sociais investem tempo, equipa e financiamento em programas de capacitação. Só que muita informação importante fica espalhada entre formulários, planilhas, mensagens e PDFs. A equipa perde horas a consolidar dados. Os financiadores recebem uma visão incompleta do resultado. E os formandos chegam ao mercado sem provas claras do que aprenderam.",
     image: PLACEHOLDER_IMAGE,
     imageAlt: "Dados de programa social organizados em interface",
   },
@@ -53,7 +53,7 @@ export const layerFeatures: LayerFeature[] = [
   {
     eyebrow: "Promessa",
     title: "Aumentar a empregabilidade através de evidências reais de competência.",
-    body: "Cada participante passa a ter um histórico verificável de progresso, desempenho e validações. A instituição ganha controlo e as empresas avaliam talento com mais segurança.",
+    body: "Cada participante passa a ter um histórico verificável de progresso, desempenho e validações. A instituição ganha mais controlo sobre a operação. As empresas recebem perfis com mais contexto para avaliar talento com segurança.",
     image: PLACEHOLDER_IMAGE,
     imageAlt: "Dashboard de impacto e competências",
   },
@@ -62,17 +62,17 @@ export const layerFeatures: LayerFeature[] = [
 export const complianceCards: ComplianceCard[] = [
   {
     title: "ATS Social",
-    body: "Um funil de candidatura pensado para programas de impacto social, com critérios de elegibilidade, documentação e estado de cada candidato num só lugar.",
+    body: "Um funil de candidatura pensado para programas de impacto social. Permite gerir candidaturas, critérios de elegibilidade, documentação e estado de cada candidato num só lugar.",
     image: PLACEHOLDER_IMAGE,
   },
   {
-    title: "Passaporte de Competências",
-    body: "Um perfil digital que regista progresso, competências, avaliações, desafios práticos e validações para mostrar o valor real do formando.",
+    title: "Perfil de Competências",
+    body: "Um perfil digital que mostra o valor real do formando. Regista progresso, competências, avaliações, desafios práticos e validações. O formando deixa de depender apenas de um CV tradicional para mostrar o que sabe fazer.",
     image: PLACEHOLDER_IMAGE,
   },
   {
     title: "Gestão Pedagógica",
-    body: "Uma camada para formadores e mentores acompanharem presença, participação, evolução técnica e sinais de risco ao longo do programa.",
+    body: "Uma camada de acompanhamento para formadores e mentores. Ajuda a acompanhar presença, participação, evolução técnica e sinais de risco ao longo do programa. Abrange também oportunidades de focar em softskills e feedbacks especificos.",
     image: PLACEHOLDER_IMAGE,
   },
 ];
@@ -85,22 +85,22 @@ export const channels: ChannelCard[] = [
   },
   {
     title: "Coordenadores de impacto",
-    body: "Visão centralizada do programa, indicadores mais fáceis de acompanhar e menos dependência de planilhas.",
+    body: "Visão centralizada do programa, indicadores mais fáceis de acompanhar, avaliações e feedbacks em histórico e menos dependência de planilhas e mensagens soltas.",
     icons: ["CI"],
   },
   {
     title: "Formadores e mentores",
-    body: "Registo simples de evolução, feedback mais estruturado e melhor leitura dos riscos de abandono.",
+    body: "Registo simples de evolução, feedback mais estruturado e melhor leitura dos riscos de abandono ou baixa performance.",
     icons: ["FM"],
   },
   {
     title: "Formandos",
-    body: "Perfil digital com evidências, mais visibilidade profissional e reconhecimento do progresso feito.",
+    body: "Perfil digital com evidências, mais visibilidade profissional, centralidade das necessidades durante o fluxo e reconhecimento do progresso feito durante a formação.",
     icons: ["PF"],
   },
   {
     title: "Empresas e RH",
-    body: "Acesso a perfis pré-validados, menos dependência de CVs estáticos e mais segurança na seleção.",
+    body: "Acesso a perfis pré-validados, menos dependência de CVs estáticos e mais segurança na seleção de candidatos.",
     icons: ["RH"],
   },
 ];
@@ -122,23 +122,15 @@ export const footerColumns: FooterColumn[] = [
       { label: "Para quem é", href: "/publicos" },
       { label: "Impacto", href: "/impacto" },
       { label: "Mercado", href: "/mercado" },
+      { label: "Modelo de negócio", href: "/modelo-negocio" },
     ],
   },
   {
-    title: "Modelo",
+    title: "Apoio",
     links: [
-      { label: "Modelo de negócio", href: "/modelo-negocio" },
       { label: "FAQ", href: "/faq" },
       { label: "Contato", href: "/contato" },
       { label: "Mapa do site", href: "/mapa-do-site" },
-    ],
-  },
-  {
-    title: "Piloto",
-    links: [
-      { label: "ATS Social", href: "/produto" },
-      { label: "Passaporte", href: "/produto" },
-      { label: "Validação", href: "/piloto" },
     ],
   },
 ];

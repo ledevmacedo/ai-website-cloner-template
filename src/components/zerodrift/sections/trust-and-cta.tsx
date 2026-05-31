@@ -4,26 +4,27 @@ import { SectionFrame } from "../section-frame";
 export function TrustAndCta() {
   const pilotChecks = [
     "Se a instituição ganha tempo na operação.",
+    "Se a instituição consegue ter uma gestão mais eficaz da turma.",
     "Se os dados ficam mais completos e confiáveis.",
     "Se os formandos conseguem construir perfis mais claros.",
-    "Se empresas percebem valor em perfis validados por evidências.",
+    "Se as empresas percebem valor em perfis validados por evidências.",
   ];
 
   const faqs = [
     {
       question: "O Impact Flow já está desenvolvido?",
       answer:
-        "O projeto está em fase de ideação avançada, com proposta de valor e escopo inicial do MVP definidos.",
+        "O projeto está em fase de ideação avançada. O framework de negócio, a proposta de valor e o escopo inicial do MVP já estão definidos.",
     },
     {
       question: "Qual é o primeiro produto a validar?",
       answer:
-        "O MVP começa com ATS Social e Passaporte de Competências, por atacarem a dor operacional e criarem a primeira base de evidências.",
+        "O MVP começa com ATS Social e Perfil de Competências, porque estes dois módulos atacam a dor operacional do inicio do fluxo que o Impact Flow quer potencializar e criam a primeira base de evidências dos formandos.",
     },
     {
       question: "A instituição precisa mudar todo o processo para testar?",
       answer:
-        "Não. O piloto começa com um recorte controlado, como uma turma, um programa ou uma fase do processo.",
+        "Não. O piloto deve começar com um recorte controlado, como uma turma, um programa ou uma fase do processo. A Impact Flow adequa-se a necessidades que encontre, a ser uma plataforma que busque cada vez mais algo personalizado e exclusivo.",
     },
   ];
 
@@ -74,7 +75,7 @@ export function TrustAndCta() {
                 Vamos validar o Impact Flow com uma instituição real?
               </h2>
               <p className="mt-5 max-w-[530px] text-[15px] font-medium leading-[1.45]">
-                Estamos preparados para validar o MVP com parceiros institucionais. O piloto começa pequeno, com foco em ATS Social e Passaporte de Competências.
+                Estamos em fase de ideação avançada e preparados para validar o MVP com parceiros institucionais.
               </p>
               <div className="mt-8 flex max-w-[470px] flex-col gap-3 sm:flex-row" id="contato">
                 <input
@@ -95,7 +96,7 @@ export function TrustAndCta() {
             </div>
             <blockquote className="self-center rounded-[8px] bg-white p-8 text-[#171719]">
               <p className="text-[20px] font-light leading-[1.35]">
-                {`"Conte um pouco sobre o programa que quer validar. A ideia é perceber se o Impact Flow pode ajudar numa turma, numa fase do processo ou num piloto mais completo."`}
+                {`"Conte um pouco sobre o programa que quer validar. A ideia é perceber se o Impact Flow pode te ajudar a organizar e ter sucesso nesso fluxo todo, numa fase do processo ou num piloto mais completo."`}
               </p>
               <footer className="mt-8 text-[11px] font-bold uppercase text-[#555]">
                 Impact Flow

@@ -13,7 +13,7 @@ export function Channels() {
               Para quem é o Impact Flow
             </h2>
             <p className="mt-5 max-w-[440px] text-[15px] leading-[1.45] text-[#747780]">
-              A plataforma conecta quem financia, quem coordena, quem forma, quem aprende e quem contrata dentro da mesma operação.
+              O Impact Flow conecta perfis diferentes dentro da mesma operação: quem financia, quem coordena, quem forma, quem aprende e quem contrata.
             </p>
             <div className="mt-7 flex gap-3">
               {channelTabs.map((tab) => (

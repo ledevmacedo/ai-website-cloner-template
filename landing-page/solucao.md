@@ -10,7 +10,7 @@ Cada participante passa a ter um histórico verificável de progresso, desempenh
 
 ## Promessa central
 
-Aumentar a empregabilidade através de evidências reais de competência.
+Aumentar a empregabilidade por meio de eficiencia operacional para as formações e de evidências reais de competência do candidato para as empresas.
 
 ---
 

@@ -47,7 +47,7 @@ export function Footer() {
         </div>
         <div className="mt-10 grid gap-8 border-t border-[#ececec] pt-8 text-[13px] text-[#747780] md:grid-cols-[1fr_1fr]">
           <p>
-            MVP em validação com foco em ATS Social + Passaporte de Competências.{" "}
+            MVP em validação com foco em ATS Social + Perfil de Competências.{" "}
             <Link className="underline" href="/piloto">
               Falar sobre piloto.
             </Link>

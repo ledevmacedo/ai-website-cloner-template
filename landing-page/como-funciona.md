@@ -2,7 +2,7 @@
 
 ## Um fluxo simples, da candidatura à oportunidade.
 
-O Impact Flow organiza a informação para que ela acompanhe o formando durante todo o processo.
+O Impact Flow organiza a informação para que ela acompanhe o fluxo do formando durante todo o processo.
 
 ---
 
@@ -12,35 +12,41 @@ As instituições gerem candidaturas, critérios de elegibilidade e documentaç�
 
 O objetivo é reduzir perdas de candidatos, acelerar a triagem e manter os dados importantes acessíveis desde o primeiro contacto.
 
+É uma ferramenta para diminuir os problemas operacionais de organização que muitas instituições possuem.
+
 ---
 
 ## 2. Acompanhamento Pedagógico
 
 Formadores registam presença, progresso, desafios práticos e avaliações.
 
-A equipa deixa de depender de registos soltos para perceber a evolução da turma e identificar quem precisa de apoio.
+A equipa deixa de depender de registos soltos para perceber a evolução da turma e identificar quem precisa de apoio. 
+
+Consegue perceber mais detalhes individuais e personalizar o que for preciso para a formação e o formando. 
 
 ---
 
-## 3. Passaporte de Competências
+## 3. Perfil de Competências
 
 Cada formando constrói um perfil digital com evidências técnicas e comportamentais, validado por dados, mentores e atividades reais.
 
 O perfil ajuda a mostrar o que a pessoa construiu durante a formação, não apenas que ela passou por um curso.
 
+Atividades que envolvam softskills serão valorizadas pra inserir no perfil. Feedback reais dos professores e coordenadores que tem contato com o formando.  
+
 ---
 
 ## 4. Ligação ao Mercado
 
-Empresas acedem a perfis mais claros, com contexto e histórico de desempenho.
+Empresas acedem a perfis mais claros, com contexto e histórico de desempenho personalizado e com clareza.
 
-A contratação deixa de depender apenas de CVs e passa a considerar evidências concretas.
+A contratação deixa de depender apenas de CVs e passa a considerar evidências concretas e perfil real esperado do formando.
 
 ---
 
 ## Frase de reforço
 
-O dado certo, no momento certo, ajuda a decidir melhor.
+A ferramenta certa, no momento certo, ajuda a decidir e escolher melhor.
 
 ---
 

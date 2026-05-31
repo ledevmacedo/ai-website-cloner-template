@@ -24,7 +24,7 @@ export function Hero() {
           <div className="mb-8 flex flex-wrap items-center gap-3 text-[13px] font-bold uppercase">
             <span>MVP em validação</span>
             <span className="h-6 w-px rotate-[18deg] bg-white" />
-            <span>ATS Social + Passaporte de Competências</span>
+            <span>ATS Social + Perfil de Competências</span>
           </div>
           <h1 className="text-[48px] font-light leading-[0.96] tracking-normal md:text-[92px]">
             Leve formação social da candidatura ao emprego

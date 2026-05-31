@@ -208,11 +208,10 @@ function ContactContent({ page }: Readonly<{ page: LandingPage }>) {
                 <FieldLabel htmlFor="pain">Principal dor atual</FieldLabel>
                 <Textarea
                   id="pain"
-                  placeholder="Conte um pouco sobre o programa que quer validar."
+                  placeholder="Conte um pouco sobre o programa que quer validar. A ideia é perceber se o Impact Flow pode te ajudar a organizar e ter sucesso nesso fluxo todo."
                 />
                 <FieldDescription>
-                  A validação pode começar por uma turma, uma fase do processo ou
-                  um piloto mais completo.
+                  A ideia é perceber se o Impact Flow pode te ajudar a organizar e ter sucesso nesso fluxo todo.
                 </FieldDescription>
               </Field>
             </FieldGroup>

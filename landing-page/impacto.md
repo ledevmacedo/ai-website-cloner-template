@@ -6,6 +6,11 @@ O Impact Flow foi desenhado para gerar impacto em duas frentes: melhorar a opera
 
 Quando os dados estão organizados, fica mais fácil acompanhar resultados, provar valor a financiadores e criar pontes reais com empresas.
 
+Proporciona impacto positivo para todo o ecossistema de desenvolvimento do país. Mais financiamento, mais pessoas qualificadas e que encontram e são encontrados por empresas nacionais que ganham talento
+
+O Impact Flow é a sua carreira em movimento. 
+É o fluxo que te eleva. 
+
 ---
 
 ## Resultados esperados
@@ -32,7 +37,7 @@ Quando os dados estão organizados, fica mais fácil acompanhar resultados, prov
 
 ## Alinhamento ODS
 
-O projeto está alinhado com quatro objetivos:
+O projeto está alinhado com a Agenda2030, principalmente é relacionado a quatro objetivos:
 
 - ODS 4: educação de qualidade.
 - ODS 8: trabalho digno e crescimento económico.

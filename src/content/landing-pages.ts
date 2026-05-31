@@ -29,7 +29,7 @@ export const landingPages: LandingPage[] = [
     intro:
       "Muitas instituições sociais fazem um trabalho real de capacitação, mas ainda gerem partes críticas da operação com planilhas, formulários, mensagens e documentos soltos.",
     description:
-      "A dor central é simples: o impacto existe, mas nem sempre aparece com clareza para quem coordena, financia ou contrata.",
+      "O resultado é um problema silencioso: o impacto existe, mas nem sempre aparece com clareza para quem coordena, financia ou contrata.",
     cta: { label: "Ver a solução", href: "/solucao" },
     blocks: [
       {
@@ -51,7 +51,7 @@ export const landingPages: LandingPage[] = [
         ],
       },
       {
-        title: "Consequências práticas",
+        title: "Consequências práticas do problema",
         items: [
           "Mais horas administrativas para a equipa.",
           "Menos confiança nos dados do programa.",
@@ -74,12 +74,12 @@ export const landingPages: LandingPage[] = [
     intro:
       "O Impact Flow centraliza o ciclo da formação social numa infraestrutura digital: candidaturas, triagem, acompanhamento pedagógico, evidências de competência e ligação com empresas.",
     description:
-      "Cada participante passa a ter um histórico verificável de progresso, desempenho e validações.",
+      "A instituição ganha mais controlo sobre a operação. Cada participante passa a ter um histórico verificável de progresso, desempenho e validações. As empresas recebem perfis com mais contexto para avaliar talento com segurança.",
     cta: { label: "Ver módulos", href: "/produto" },
     blocks: [
       {
         title: "Promessa central",
-        body: ["Aumentar a empregabilidade através de evidências reais de competência."],
+        body: ["Aumentar a empregabilidade por meio de eficiencia operacional para as formações e de evidências reais de competência do candidato para as empresas."],
       },
       {
         title: "O que muda na prática",
@@ -119,7 +119,7 @@ export const landingPages: LandingPage[] = [
     intro:
       "O produto foi pensado como uma infraestrutura modular. A primeira versão foca no que prova valor mais rápido: organizar candidaturas e criar evidências verificáveis de competências.",
     description:
-      "A plataforma combina ATS Social, Passaporte de Competências, Gestão Pedagógica e Portal de Talentos B2B.",
+      "A plataforma combina ATS Social, Perfil de Competências, Gestão Pedagógica e Portal de Talentos B2B.",
     cta: { label: "Entender o fluxo", href: "/como-funciona" },
     blocks: [
       {
@@ -132,13 +132,14 @@ export const landingPages: LandingPage[] = [
           "Menos tempo gasto em triagem manual.",
           "Menos candidatos perdidos por falta de seguimento.",
           "Mais controlo sobre critérios sociais e documentação.",
+          "Eficiencia no processo.",
         ],
       },
       {
-        title: "Passaporte de Competências",
+        title: "Perfil de Competências",
         body: [
           "Um perfil digital que mostra o valor real do formando.",
-          "Regista progresso, competências, avaliações, desafios práticos e validações.",
+          "Regista progresso, competências, avaliações, desafios práticos e validações. O formando deixa de depender apenas de um CV tradicional para mostrar o que sabe fazer.",
         ],
         items: [
           "Histórico verificável de competências.",
@@ -150,12 +151,13 @@ export const landingPages: LandingPage[] = [
         title: "Gestão Pedagógica",
         body: [
           "Uma camada de acompanhamento para formadores e mentores.",
-          "Ajuda a acompanhar presença, participação, evolução técnica e sinais de risco ao longo do programa.",
+          "Ajuda a acompanhar presença, participação, evolução técnica e sinais de risco ao longo do programa. Abrange também oportunidades de focar em softskills e feedbacks especificos.",
         ],
         items: [
           "Acompanhamento mais próximo da turma.",
-          "Dados pedagógicos menos dispersos.",
+          "Dados pedagógicos menos dispersos e mais ricos.",
           "Base mais clara para relatórios e melhorias do programa.",
+          "Melhor posicionamento perante ao mercado.",
         ],
       },
       {
@@ -171,6 +173,7 @@ export const landingPages: LandingPage[] = [
         title: "Recursos transversais",
         items: [
           "Segurança e conformidade com RGPD.",
+          "Fluxo intuitivo e com acessibilidade para todos.",
           "Histórico e rastreabilidade de ações.",
           "Dashboards de impacto para acompanhamento.",
           "Possibilidade futura de integração com sistemas de RH.",
@@ -187,7 +190,7 @@ export const landingPages: LandingPage[] = [
     intro:
       "O Impact Flow organiza a informação para que ela acompanhe o formando durante todo o processo.",
     description:
-      "A candidatura, a formação, o passaporte de competências e a ligação ao mercado deixam de viver em silos separados.",
+      "A candidatura, a formação, o perfil de competências e a ligação ao mercado deixam de viver em silos separados.",
     cta: { label: "Ver públicos", href: "/publicos" },
     blocks: [
       {
@@ -201,25 +204,28 @@ export const landingPages: LandingPage[] = [
         title: "2. Acompanhamento Pedagógico",
         body: [
           "Formadores registam presença, progresso, desafios práticos e avaliações.",
-          "A equipa deixa de depender de registos soltos para perceber a evolução da turma.",
+          "A equipa deixa de depender de registos soltos para perceber a evolução da turma e identificar quem precisa de apoio.",
+          "Consegue perceber mais detalhes individuais e personalizar o que for preciso para a formação e o formando.",
         ],
       },
       {
-        title: "3. Passaporte de Competências",
+        title: "3. Perfil de Competências",
         body: [
           "Cada formando constrói um perfil digital com evidências técnicas e comportamentais, validado por dados, mentores e atividades reais.",
+          "O perfil ajuda a mostrar o que a pessoa construiu durante a formação, não apenas que ela passou por um curso.",
+          "Atividades que envolvam softskills serão valorizadas pra inserir no perfil. Feedback reais dos professores e coordenadores que tem contato com o formando.",
         ],
       },
       {
         title: "4. Ligação ao Mercado",
         body: [
-          "Empresas acedem a perfis mais claros, com contexto e histórico de desempenho.",
-          "A contratação deixa de depender apenas de CVs e passa a considerar evidências concretas.",
+          "Empresas acedem a perfis mais claros, com contexto e histórico de desempenho personalizado e com clareza.",
+          "A contratação deixa de depender apenas de CVs e passa a considerar evidências concretas e perfil real esperado do formando.",
         ],
       },
       {
         title: "Frase de reforço",
-        body: ["O dado certo, no momento certo, ajuda a decidir melhor."],
+        body: ["A ferramenta certa, no momento certo, ajuda a decidir e escolher melhor."],
       },
     ],
     nextStep: { label: "Ver quem usa o Impact Flow", href: "/publicos" },
@@ -252,6 +258,7 @@ export const landingPages: LandingPage[] = [
         items: [
           "Visão centralizada do programa.",
           "Indicadores mais fáceis de acompanhar.",
+          "Avaliações e feedbacks em histórico.",
           "Menos dependência de planilhas e mensagens soltas.",
         ],
       },
@@ -270,6 +277,7 @@ export const landingPages: LandingPage[] = [
         items: [
           "Perfil digital com evidências.",
           "Mais visibilidade profissional.",
+          "Centralidade das necessidades durante o fluxo.",
           "Reconhecimento do progresso feito durante a formação.",
         ],
       },
@@ -292,7 +300,7 @@ export const landingPages: LandingPage[] = [
     intro:
       "O Impact Flow foi desenhado para gerar impacto em duas frentes: melhorar a operação das instituições e aumentar a empregabilidade dos participantes.",
     description:
-      "Quando os dados estão organizados, fica mais fácil acompanhar resultados, provar valor a financiadores e criar pontes reais com empresas.",
+      "Quando os dados estão organizados, fica mais fácil acompanhar resultados, provar valor a financiadores e criar pontes reais com empresas. Proporciona impacto positivo para todo o ecossistema de desenvolvimento do país.",
     cta: { label: "Ver plano de piloto", href: "/piloto" },
     blocks: [
       {
@@ -303,6 +311,13 @@ export const landingPages: LandingPage[] = [
           "Melhor qualidade da informação usada em decisões de recrutamento.",
           "Maior capacidade de demonstrar impacto social.",
           "Rede mais forte entre instituições, formandos e empresas.",
+        ],
+      },
+      {
+        title: "Frase central",
+        body: [
+          "O Impact Flow é a sua carreira em movimento.",
+          "É o fluxo que te eleva.",
         ],
       },
       {
@@ -334,7 +349,7 @@ export const landingPages: LandingPage[] = [
     title: "Começamos pelo núcleo que prova valor mais rápido.",
     eyebrow: "Piloto",
     intro:
-      "O MVP inicial concentra-se em dois módulos: ATS Social e Passaporte de Competências.",
+      "O MVP inicial concentra-se em dois módulos: ATS Social e Perfil de Competências.",
     description:
       "Este recorte reduz complexidade e permite validar a operação em contexto real antes de expandir para módulos mais avançados.",
     cta: { label: "Falar sobre piloto", href: "/contato" },
@@ -343,7 +358,7 @@ export const landingPages: LandingPage[] = [
         title: "Escopo inicial",
         items: [
           "ATS Social para triagem, elegibilidade e gestão do funil de candidaturas.",
-          "Passaporte de Competências para registo estruturado de progresso, evidências e validações.",
+          "Perfil de Competências para registo estruturado de progresso, evidências e validações.",
         ],
       },
       {
@@ -358,6 +373,7 @@ export const landingPages: LandingPage[] = [
         title: "O que queremos validar",
         items: [
           "Se a instituição ganha tempo na operação.",
+          "Se a instituição consegue ter uma gestão mais eficaz da turma.",
           "Se os dados ficam mais completos e confiáveis.",
           "Se os formandos conseguem construir perfis mais claros.",
           "Se as empresas percebem valor em perfis validados por evidências.",
@@ -420,6 +436,7 @@ export const landingPages: LandingPage[] = [
           "Serviços de formação e suporte premium.",
           "Licenças para empresas recrutadoras.",
           "Relatórios agregados e anonimizados em fases futuras.",
+          "Selos para instituições ou empresas.",
         ],
       },
       {
@@ -445,13 +462,14 @@ export const landingPages: LandingPage[] = [
         items: [
           "Se empresas pagam por dados de desempenho validados como alternativa ao recrutamento tradicional.",
           "Se fundações conseguem converter a poupança de tempo operacional em orçamento para software.",
-          "Se o Passaporte de Competências se torna uma referência útil para seleção baseada em mérito.",
+          "Se o Perfil de Competências se torna uma referência útil para seleção baseada em mérito.",
         ],
       },
       {
         title: "Leitura financeira",
         body: [
           "O primeiro ano deve ser tratado como fase de construção de base: validar produto, provar valor com pilotos, recolher métricas reais e criar condições para crescimento sustentável.",
+          "A projeção a três anos aponta para um caminho em que o projeto absorve investimento inicial, procura retorno operacional positivo e consolida margem à medida que cresce.",
         ],
       },
     ],
@@ -476,7 +494,7 @@ export const landingPages: LandingPage[] = [
       {
         title: "Qual é o primeiro produto a validar?",
         body: [
-          "O MVP começa com ATS Social e Passaporte de Competências, porque estes dois módulos atacam a dor operacional e criam a primeira base de evidências dos formandos.",
+          "O MVP começa com ATS Social e Perfil de Competências, porque estes dois módulos atacam a dor operacional e criam a primeira base de evidências dos formandos.",
         ],
       },
       {
@@ -488,13 +506,13 @@ export const landingPages: LandingPage[] = [
       {
         title: "O Impact Flow substitui um LMS?",
         body: [
-          "Não necessariamente. A proposta inicial é cobrir o que muitos LMS não resolvem bem: recrutamento social, prova de competências, dados de impacto e ligação ao mercado.",
+          "Não necessariamente. A proposta inicial é cobrir o que muitos LMS não resolvem bem: recrutamento social, apoio operacional facilitado para instituições e financiadores, prova de competências, dados de impacto e ligação ao mercado.",
         ],
       },
       {
         title: "A instituição precisa mudar todo o processo para testar?",
         body: [
-          "Não. O piloto deve começar com um recorte controlado, como uma turma, um programa ou uma fase do processo.",
+          "Não. O piloto deve começar com um recorte controlado, como uma turma, um programa ou uma fase do processo. A Impact Flow adequa-se a necessidades que encontre, a ser uma plataforma que busque cada vez mais algo personalizado e exclusivo.",
         ],
       },
       {
@@ -506,13 +524,13 @@ export const landingPages: LandingPage[] = [
       {
         title: "Que tipo de impacto a plataforma pretende medir?",
         body: [
-          "Tempo administrativo poupado, progresso dos formandos, competências validadas, taxa de conclusão, ligação a oportunidades e contratação pós-formação.",
+          "A plataforma oferece medições para as instituições, os alunos e as empresas. com tempo administrativo poupado, progresso registrado em histórico, feedbacks reais registrados, competências validadas, taxa de conclusão, ligação a oportunidades e contratação pós-formação.",
         ],
       },
       {
         title: "Como o piloto reduz risco?",
         body: [
-          "O piloto começa pequeno, com uma turma ou uma fase do processo. A instituição valida valor antes de assumir uma mudança maior.",
+          "O piloto começa pequeno, com uma turma ou uma fase do processo. A instituição valida valor antes de assumir uma mudança maior. E o Impact Flow tem a certeza de que pode estar sempre a faer ajustes no que for preciso para melhorar.",
         ],
       },
     ],
@@ -526,7 +544,7 @@ export const landingPages: LandingPage[] = [
       "Estamos em fase de ideação avançada e preparados para validar o MVP com parceiros institucionais.",
     description:
       "Procuramos fundações, ONGs, entidades de formação social e empresas parceiras que queiram testar uma forma mais clara de ligar formação, dados e empregabilidade.",
-    cta: { label: "Quero conversar sobre um piloto", href: "/contato" },
+    cta: { label: "Quero conversar sobre um piloto", href: "#form" },
     blocks: [
       {
         title: "Dados a incluir no formulário",
@@ -544,7 +562,7 @@ export const landingPages: LandingPage[] = [
       {
         title: "Mensagem curta para formulário",
         body: [
-          "Conte um pouco sobre o programa que quer validar. A ideia é perceber se o Impact Flow pode ajudar numa turma, numa fase do processo ou num piloto mais completo.",
+          "Conte um pouco sobre o programa que quer validar. A ideia é perceber se o Impact Flow pode te ajudar a organizar e ter sucesso nesso fluxo todo, numa fase do processo ou num piloto mais completo.",
         ],
       },
       {
@@ -633,12 +651,12 @@ export const siteFooterColumns = [
       { label: "Para quem é", href: "/publicos" },
       { label: "Impacto", href: "/impacto" },
       { label: "Mercado", href: "/mercado" },
+      { label: "Modelo de negócio", href: "/modelo-negocio" },
     ],
   },
   {
     title: "Apoio",
     links: [
-      { label: "Modelo de negócio", href: "/modelo-negocio" },
       { label: "FAQ", href: "/faq" },
       { label: "Contato", href: "/contato" },
       { label: "Mapa do site", href: "/mapa-do-site" },
