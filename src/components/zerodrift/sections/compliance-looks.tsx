@@ -13,7 +13,7 @@ export function ComplianceLooks() {
         <div className="grid gap-8 md:grid-cols-3">
           {complianceCards.map((card) => (
             <article key={card.title}>
-              <div className="mb-6 aspect-[1.1] overflow-hidden rounded-[4px] bg-[#f8f4f7]">
+              <div className="mb-6 aspect-[1.1] overflow-hidden rounded-[4px] bg-[#f5f5f5]">
                 <Image
                   className="size-full object-cover"
                   src={card.image}
@@ -23,7 +23,7 @@ export function ComplianceLooks() {
                 />
               </div>
               <h3 className="text-[16px] font-medium text-[#171719]">{card.title}</h3>
-              <p className="mt-2 text-[13px] leading-[1.45] text-[#747780]">{card.body}</p>
+              <p className="mt-2 text-[13px] leading-[1.45] text-[#6c7078]">{card.body}</p>
             </article>
           ))}
         </div>

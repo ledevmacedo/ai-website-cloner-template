@@ -7,7 +7,7 @@ import type {
   NavLink,
 } from "@/types/zerodrift";
 
-import { PLACEHOLDER_IMAGE } from "./constants";
+import { ZERODRIFT_ASSET_PATH } from "./constants";
 
 export const navLinks: NavLink[] = [
   { label: "Problema", href: "/problema" },
@@ -39,14 +39,14 @@ export const layerFeatures: LayerFeature[] = [
     eyebrow: "Problema",
     title: "O impacto acontece, mas nem sempre fica visível.",
     body: "Instituições sociais investem tempo, equipa e financiamento em programas de capacitação. Só que muita informação importante fica espalhada entre formulários, planilhas, mensagens e PDFs. A equipa perde horas a consolidar dados. Os financiadores recebem uma visão incompleta do resultado. E os formandos chegam ao mercado sem provas claras do que aprenderam.",
-    image: PLACEHOLDER_IMAGE,
+    image: `${ZERODRIFT_ASSET_PATH}dados-sociais.jpg`,
     imageAlt: "Dados de programa social organizados em interface",
   },
   {
     eyebrow: "Solução",
     title: "Uma plataforma para ligar formação social, dados e empregabilidade.",
     body: "O Impact Flow centraliza candidaturas, triagem, acompanhamento pedagógico, evidências de competência e ligação com empresas numa infraestrutura digital.",
-    image: PLACEHOLDER_IMAGE,
+    image: `${ZERODRIFT_ASSET_PATH}fluxo-acompanhamento.jpg`,
     imageAlt: "Fluxo de acompanhamento de formandos",
     reverse: true,
   },
@@ -54,7 +54,7 @@ export const layerFeatures: LayerFeature[] = [
     eyebrow: "Promessa",
     title: "Aumentar a empregabilidade através de evidências reais de competência.",
     body: "Cada participante passa a ter um histórico verificável de progresso, desempenho e validações. A instituição ganha mais controlo sobre a operação. As empresas recebem perfis com mais contexto para avaliar talento com segurança.",
-    image: PLACEHOLDER_IMAGE,
+    image: `${ZERODRIFT_ASSET_PATH}dashboard-impacto.jpg`,
     imageAlt: "Dashboard de impacto e competências",
   },
 ];
@@ -63,17 +63,17 @@ export const complianceCards: ComplianceCard[] = [
   {
     title: "ATS Social",
     body: "Um funil de candidatura pensado para programas de impacto social. Permite gerir candidaturas, critérios de elegibilidade, documentação e estado de cada candidato num só lugar.",
-    image: PLACEHOLDER_IMAGE,
+    image: `${ZERODRIFT_ASSET_PATH}candidaturas-ats.jpg`,
   },
   {
     title: "Perfil de Competências",
     body: "Um perfil digital que mostra o valor real do formando. Regista progresso, competências, avaliações, desafios práticos e validações. O formando deixa de depender apenas de um CV tradicional para mostrar o que sabe fazer.",
-    image: PLACEHOLDER_IMAGE,
+    image: `${ZERODRIFT_ASSET_PATH}perfil-competencias.jpg`,
   },
   {
     title: "Gestão Pedagógica",
     body: "Uma camada de acompanhamento para formadores e mentores. Ajuda a acompanhar presença, participação, evolução técnica e sinais de risco ao longo do programa. Abrange também oportunidades de focar em softskills e feedbacks especificos.",
-    image: PLACEHOLDER_IMAGE,
+    image: `${ZERODRIFT_ASSET_PATH}gestao-pedagogica.jpg`,
   },
 ];
 

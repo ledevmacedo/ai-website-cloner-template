@@ -22,7 +22,7 @@ const menuItems = [
 
 export function Header() {
   return (
-    <header className="mx-auto flex h-[86px] w-full max-w-[1360px] items-center justify-between px-5 md:px-0">
+    <header className="mx-auto flex h-[86px] w-full max-w-[1360px] items-center justify-between px-3 md:px-0">
       <Link className="flex items-center" href="/" aria-label="Impact Flow home">
         <Image
           alt="Impact Flow"
@@ -33,7 +33,7 @@ export function Header() {
           width={900}
         />
       </Link>
-      <nav className="hidden items-center gap-7 text-[15px] font-normal text-[#0b1020] md:flex">
+      <nav className="hidden items-center gap-7 text-[15px] font-normal text-[#171719] md:flex">
         {navLinks.slice(0, 6).map((item) => (
           <Link className="hover:text-[#6F5BEF]" href={item.href} key={item.label}>
             {item.label}
@@ -41,7 +41,7 @@ export function Header() {
         ))}
       </nav>
       <Link
-        className="hidden h-12 items-center justify-center rounded-[8px] bg-[#6F5BEF] px-7 text-[12px] font-bold uppercase text-white md:inline-flex"
+        className="hidden h-11 items-center justify-center rounded-[8px] bg-[#6F5BEF] px-7 text-[12px] font-bold uppercase text-white md:inline-flex"
         href="/piloto"
       >
         Validar piloto

@@ -30,7 +30,7 @@ export function ApiInfrastructure() {
             <h2 className="max-w-[480px] text-[38px] font-light leading-[1.05]">
               O setor social precisa de ferramentas próprias para provar resultado
             </h2>
-            <p className="mt-5 max-w-[500px] text-[15px] leading-[1.45] text-[#747780]">
+            <p className="mt-5 max-w-[500px] text-[15px] leading-[1.45] text-[#6c7078]">
               O Impact Flow posiciona dados confiáveis entre formação social,
               prestação de contas e empregabilidade.
             </p>
@@ -55,7 +55,7 @@ function InfoList({ title, items }: Readonly<{ title: string; items: string[] }>
   return (
     <article className="rounded-[8px] bg-[#f5f5f5] p-5">
       <h3 className="text-[16px] font-medium text-[#171719]">{title}</h3>
-      <ul className="mt-4 flex flex-col gap-3 text-[13px] leading-[1.4] text-[#747780]">
+      <ul className="mt-4 flex flex-col gap-3 text-[13px] leading-[1.4] text-[#6c7078]">
         {items.map((item) => (
           <li key={item}>{item}</li>
         ))}

@@ -11,11 +11,11 @@ export function EnforcementLayer() {
         <h2 className="mb-12 text-[40px] font-light leading-none md:text-[56px]">
           Formação social, dados e empregabilidade no mesmo fluxo
         </h2>
-        <div className="mb-16 grid border-t border-[#d9d9d9] md:grid-cols-3">
+        <div className="mb-16 grid border-t border-[#e3e3e3] md:grid-cols-3">
           {layerSteps.map((step) => (
             <div className="border-r border-[#e3e3e3] py-6 last:border-r-0" key={step.title}>
-              <h3 className="text-[22px] font-light text-[#64666d]">{step.title}</h3>
-              <p className="mt-2 text-[16px] text-[#64666d]">{step.body}</p>
+              <h3 className="text-[22px] font-light text-[#6c7078]">{step.title}</h3>
+              <p className="mt-2 text-[16px] text-[#6c7078]">{step.body}</p>
             </div>
           ))}
         </div>

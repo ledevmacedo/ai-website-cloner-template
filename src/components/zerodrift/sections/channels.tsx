@@ -12,13 +12,13 @@ export function Channels() {
             <h2 className="max-w-[380px] text-[38px] font-light leading-[1.05]">
               Para quem é o Impact Flow
             </h2>
-            <p className="mt-5 max-w-[440px] text-[15px] leading-[1.45] text-[#747780]">
+            <p className="mt-5 max-w-[440px] text-[15px] leading-[1.45] text-[#6c7078]">
               O Impact Flow conecta perfis diferentes dentro da mesma operação: quem financia, quem coordena, quem forma, quem aprende e quem contrata.
             </p>
             <div className="mt-7 flex gap-3">
               {channelTabs.map((tab) => (
                 <button
-                  className="h-9 rounded-[6px] border border-[#d9d9d9] px-4 text-[10px] font-bold uppercase"
+                  className="h-9 rounded-[6px] border border-[#e3e3e3] px-4 text-[10px] font-bold uppercase"
                   key={tab}
                   type="button"
                 >
@@ -33,7 +33,7 @@ export function Channels() {
                 <div className="mb-5 flex gap-2">
                   {channel.icons.map((icon) => (
                     <span
-                      className="inline-flex size-6 items-center justify-center rounded-[4px] bg-white text-[10px] font-bold text-[#2774ee]"
+                      className="inline-flex size-6 items-center justify-center rounded-[4px] bg-white text-[10px] font-bold text-[#6F5BEF]"
                       key={icon}
                     >
                       {icon}
@@ -41,7 +41,7 @@ export function Channels() {
                   ))}
                 </div>
                 <h3 className="text-[16px] font-medium">{channel.title}</h3>
-                <p className="mt-2 text-[13px] leading-[1.35] text-[#747780]">
+                <p className="mt-2 text-[13px] leading-[1.35] text-[#6c7078]">
                   {channel.body}
                 </p>
               </article>

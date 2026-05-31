@@ -30,8 +30,14 @@ export function Hero() {
             Leve formação social da candidatura ao emprego
           </h1>
           <div className="mt-12 flex flex-wrap gap-4">
-            <ButtonLink>Quero validar um piloto</ButtonLink>
-            <ButtonLink href="/como-funciona" variant="secondary">
+            <ButtonLink className="bg-white text-[#6F5BEF] hover:bg-white/90">
+              Quero validar um piloto
+            </ButtonLink>
+            <ButtonLink
+              className="border-2 border-white bg-transparent text-white hover:bg-white/10"
+              href="/como-funciona"
+              variant="outline"
+            >
               Ver como funciona
             </ButtonLink>
           </div>

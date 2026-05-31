@@ -35,13 +35,13 @@ export function TrustAndCta() {
           <h2 className="max-w-[430px] text-[40px] font-light leading-[1.05]">
             Mais transparência para as instituições. Mais oportunidades para os formandos.
           </h2>
-          <p className="mt-24 max-w-[520px] text-[14px] leading-[1.5] text-[#747780]">
+          <p className="mt-24 max-w-[520px] text-[14px] leading-[1.5] text-[#6c7078]">
             Quando os dados estão organizados, fica mais fácil acompanhar resultados, provar valor a financiadores e criar pontes reais com empresas.
           </p>
           <div className="mt-10 grid w-full max-w-[840px] gap-3 text-left md:grid-cols-2">
             {pilotChecks.map((item) => (
               <p
-                className="rounded-[8px] border border-[#e7e7e7] bg-white px-4 py-3 text-[13px] leading-[1.4] text-[#747780]"
+                className="rounded-[8px] border border-[#e3e3e3] bg-white px-4 py-3 text-[13px] leading-[1.4] text-[#6c7078]"
                 key={item}
               >
                 {item}
@@ -98,7 +98,7 @@ export function TrustAndCta() {
               <p className="text-[20px] font-light leading-[1.35]">
                 {`"Conte um pouco sobre o programa que quer validar. A ideia é perceber se o Impact Flow pode te ajudar a organizar e ter sucesso nesso fluxo todo, numa fase do processo ou num piloto mais completo."`}
               </p>
-              <footer className="mt-8 text-[11px] font-bold uppercase text-[#555]">
+              <footer className="mt-8 text-[11px] font-bold uppercase text-[#6c7078]">
                 Impact Flow
                 <br />
                 Piloto institucional
@@ -114,7 +114,7 @@ export function TrustAndCta() {
             {faqs.map((item) => (
               <article className="rounded-[8px] bg-[#f5f5f5] p-5" key={item.question}>
                 <h3 className="text-[16px] font-medium text-[#171719]">{item.question}</h3>
-                <p className="mt-3 text-[13px] leading-[1.45] text-[#747780]">
+                <p className="mt-3 text-[13px] leading-[1.45] text-[#6c7078]">
                   {item.answer}
                 </p>
               </article>

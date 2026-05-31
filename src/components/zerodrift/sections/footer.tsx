@@ -18,7 +18,7 @@ export function Footer() {
                 width={900}
               />
             </Link>
-            <div className="mt-8 text-[14px] leading-[1.5] text-[#555]">
+            <div className="mt-8 text-[14px] leading-[1.5] text-[#6c7078]">
               <p className="font-medium text-[#171719]">
                 Formação social, dados de competência e empregabilidade real.
               </p>
@@ -33,10 +33,10 @@ export function Footer() {
                 <h3 className="mb-4 text-[13px] font-medium text-[#171719]">
                   {column.title}
                 </h3>
-                <ul className="flex flex-col gap-3 text-[13px] text-[#747780]">
+                <ul className="flex flex-col gap-3 text-[13px] text-[#6c7078]">
                   {column.links.map((link) => (
                     <li key={link.label}>
-                      <Link className="hover:text-[#171719]" href={link.href}>
+                      <Link className="hover:text-[#6F5BEF]" href={link.href}>
                         {link.label}
                       </Link>
                     </li>
@@ -46,7 +46,7 @@ export function Footer() {
             ))}
           </div>
         </div>
-        <div className="mt-10 grid gap-8 border-t border-[#ececec] pt-8 text-[13px] text-[#747780] md:grid-cols-[1fr_1fr]">
+        <div className="mt-10 grid gap-8 border-t border-[#e3e3e3] pt-8 text-[13px] text-[#6c7078] md:grid-cols-[1fr_1fr]">
           <p>
             MVP em validação com foco em ATS Social + Perfil de Competências.{" "}
             <Link className="underline" href="/piloto">
@@ -71,7 +71,7 @@ export function Footer() {
             </p>
           </div>
         </div>
-        <p className="mt-9 text-[12px] text-[#9a9da4]">
+        <p className="mt-9 text-[12px] text-[#6c7078]">
           (c) 2026 Impact Flow. Todos os direitos reservados.
         </p>
       </div>
