@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
 import type { WithContext, BreadcrumbList, FAQPage, Organization } from "schema-dts";
+import { SITE_URL } from "@/lib/site";
 import { ImpactFlowPage } from "@/components/zerodrift/impact-flow-page";
 import { StructuredData } from "@/components/structured-data";
-
-const siteUrl = "https://impactflow.pt";
 
 export const metadata: Metadata = {
   title: "Impact Flow - Torne a qualificação em movimento de carreira",
@@ -13,10 +12,10 @@ export const metadata: Metadata = {
     title: "Impact Flow - Torne a qualificação em movimento de carreira",
     description:
       "O Impact Flow ajuda fundações, ONGs e instituições de formação social a organizar candidaturas, acompanhar formandos e provar resultados.",
-    url: siteUrl,
+    url: SITE_URL,
   },
   alternates: {
-    canonical: siteUrl,
+    canonical: SITE_URL,
   },
 };
 
@@ -24,7 +23,7 @@ const breadcrumb = {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   itemListElement: [
-    { "@type": "ListItem", position: 1, name: "Início", item: siteUrl },
+    { "@type": "ListItem", position: 1, name: "Início", item: SITE_URL },
   ],
 } satisfies WithContext<BreadcrumbList>;
 
@@ -32,7 +31,7 @@ const organization = {
   "@context": "https://schema.org",
   "@type": "Organization",
   name: "Impact Flow",
-  url: siteUrl,
+  url: SITE_URL,
   description:
     "Plataforma que liga formação social, dados de competência e empregabilidade real.",
 } satisfies WithContext<Organization>;
@@ -87,9 +86,9 @@ const faq = {
 export default function Home() {
   return (
     <>
-      <StructuredData data={breadcrumb} />
-      <StructuredData data={organization} />
-      <StructuredData data={faq} />
+      <StructuredData data={breadcrumb} id="breadcrumb-home" />
+      <StructuredData data={organization} id="organization" />
+      <StructuredData data={faq} id="faq-home" />
       <ImpactFlowPage />
     </>
   );

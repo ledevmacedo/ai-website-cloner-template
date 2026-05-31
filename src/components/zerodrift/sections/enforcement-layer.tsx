@@ -34,7 +34,7 @@ export function EnforcementLayer() {
                   {feature.body}
                 </p>
                 <Link
-                  className="mt-6 inline-flex h-9 items-center rounded-[6px] bg-[#171719] px-5 text-[10px] font-bold uppercase text-white"
+                  className="mt-6 inline-flex h-9 items-center rounded-[6px] bg-[#6F5BEF] px-5 text-[10px] font-bold uppercase text-white"
                   href={feature.eyebrow === "Problema" ? "/solucao" : "/produto"}
                 >
                   Ver próximo passo

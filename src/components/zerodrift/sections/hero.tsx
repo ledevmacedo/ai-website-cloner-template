@@ -5,7 +5,7 @@ import { SectionFrame } from "../section-frame";
 export function Hero() {
   return (
     <SectionFrame>
-      <div className="relative overflow-hidden rounded-[7px] bg-[#f65b35] px-8 py-20 text-white md:px-12 md:py-28">
+      <div className="relative overflow-hidden rounded-[7px] bg-[#6F5BEF] px-8 py-20 text-white md:px-12 md:py-28">
         <video
           aria-label="Animação de fundo do Impact Flow"
           autoPlay

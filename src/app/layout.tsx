@@ -1,11 +1,10 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import { SITE_URL } from "@/lib/site";
 import { StructuredData } from "@/components/structured-data";
 
-const siteUrl = "https://impactflow.pt";
-
 export const metadata: Metadata = {
-  metadataBase: new URL(siteUrl),
+  metadataBase: new URL(SITE_URL),
   title: {
     default: "Impact Flow - Torne a qualificação em movimento de carreira",
     template: "%s - Impact Flow",
@@ -23,7 +22,7 @@ export const metadata: Metadata = {
     title: "Impact Flow - Torne a qualificação em movimento de carreira",
     description:
       "O Impact Flow ajuda fundações, ONGs e instituições de formação social a organizar candidaturas, acompanhar formandos e provar resultados.",
-    url: siteUrl,
+    url: SITE_URL,
   },
   twitter: {
     card: "summary_large_image",
@@ -36,7 +35,7 @@ export const metadata: Metadata = {
     follow: true,
   },
   alternates: {
-    canonical: siteUrl,
+    canonical: SITE_URL,
   },
 };
 
@@ -65,12 +64,9 @@ export default function RootLayout({
             "@context": "https://schema.org",
             "@type": "Organization",
             name: "Impact Flow",
-            url: siteUrl,
+            url: SITE_URL,
             description:
               "Plataforma que liga formação social, dados de competência e empregabilidade real.",
-            sameAs: [
-              siteUrl,
-            ],
           }}
         />
         {children}

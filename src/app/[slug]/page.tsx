@@ -2,11 +2,10 @@ import type { Metadata } from "next";
 import type { WithContext, BreadcrumbList, FAQPage } from "schema-dts";
 import { notFound } from "next/navigation";
 
+import { SITE_URL } from "@/lib/site";
 import { StructuredData } from "@/components/structured-data";
 import { LandingContentPage } from "@/components/landing/landing-content-page";
 import { landingPageMap, landingPages } from "@/content/landing-pages";
-
-const siteUrl = "https://impactflow.pt";
 
 type LandingRouteProps = Readonly<{
   params: Promise<{
@@ -36,10 +35,10 @@ export async function generateMetadata({
     openGraph: {
       title: `${page.eyebrow} - Impact Flow`,
       description: page.description || page.intro,
-      url: `${siteUrl}/${slug}`,
+      url: `${SITE_URL}/${slug}`,
     },
     alternates: {
-      canonical: `${siteUrl}/${slug}`,
+      canonical: `${SITE_URL}/${slug}`,
     },
   };
 }
@@ -56,12 +55,12 @@ export default async function LandingPageRoute({ params }: LandingRouteProps) {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Início", item: siteUrl },
+      { "@type": "ListItem", position: 1, name: "Início", item: SITE_URL },
       {
         "@type": "ListItem",
         position: 2,
         name: page.eyebrow,
-        item: `${siteUrl}/${slug}`,
+        item: `${SITE_URL}/${slug}`,
       },
     ],
   } satisfies WithContext<BreadcrumbList>;
@@ -85,8 +84,8 @@ export default async function LandingPageRoute({ params }: LandingRouteProps) {
 
   return (
     <>
-      <StructuredData data={breadcrumb} />
-      {faq ? <StructuredData data={faq} /> : null}
+      <StructuredData data={breadcrumb} id={`breadcrumb-${slug}`} />
+      {faq ? <StructuredData data={faq} id="faq-page" /> : null}
       <LandingContentPage page={page} />
     </>
   );

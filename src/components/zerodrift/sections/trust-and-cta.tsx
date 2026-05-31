@@ -51,7 +51,7 @@ export function TrustAndCta() {
         </div>
       </SectionFrame>
       <SectionFrame className="mt-8" id="piloto">
-        <div className="relative overflow-hidden rounded-[7px] bg-[#1343d8] px-8 py-12 text-white md:px-10">
+        <div className="relative overflow-hidden rounded-[7px] bg-[#6F5BEF] px-8 py-12 text-white md:px-10">
           <video
             aria-label="Animação de fundo do piloto Impact Flow"
             autoPlay

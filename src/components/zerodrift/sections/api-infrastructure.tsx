@@ -35,7 +35,7 @@ export function ApiInfrastructure() {
               prestação de contas e empregabilidade.
             </p>
             <Link
-              className="mt-7 inline-flex h-9 w-fit items-center rounded-[6px] bg-[#171719] px-5 text-[10px] font-bold uppercase text-white"
+              className="mt-7 inline-flex h-9 w-fit items-center rounded-[6px] bg-[#6F5BEF] px-5 text-[10px] font-bold uppercase text-white"
               href="/modelo-negocio"
             >
               Ver modelo
