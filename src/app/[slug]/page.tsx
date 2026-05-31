@@ -1,8 +1,12 @@
 import type { Metadata } from "next";
+import type { WithContext, BreadcrumbList, FAQPage } from "schema-dts";
 import { notFound } from "next/navigation";
 
+import { StructuredData } from "@/components/structured-data";
 import { LandingContentPage } from "@/components/landing/landing-content-page";
 import { landingPageMap, landingPages } from "@/content/landing-pages";
+
+const siteUrl = "https://impactflow.pt";
 
 type LandingRouteProps = Readonly<{
   params: Promise<{
@@ -27,8 +31,16 @@ export async function generateMetadata({
   }
 
   return {
-    title: `${page.eyebrow} - Impact Flow`,
-    description: page.description,
+    title: page.eyebrow,
+    description: page.description || page.intro,
+    openGraph: {
+      title: `${page.eyebrow} - Impact Flow`,
+      description: page.description || page.intro,
+      url: `${siteUrl}/${slug}`,
+    },
+    alternates: {
+      canonical: `${siteUrl}/${slug}`,
+    },
   };
 }
 
@@ -40,5 +52,42 @@ export default async function LandingPageRoute({ params }: LandingRouteProps) {
     notFound();
   }
 
-  return <LandingContentPage page={page} />;
+  const breadcrumb = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Início", item: siteUrl },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: page.eyebrow,
+        item: `${siteUrl}/${slug}`,
+      },
+    ],
+  } satisfies WithContext<BreadcrumbList>;
+
+  let faq: WithContext<FAQPage> | null = null;
+
+  if (slug === "faq") {
+    faq = {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: page.blocks.map((block) => ({
+        "@type": "Question" as const,
+        name: block.title,
+        acceptedAnswer: {
+          "@type": "Answer" as const,
+          text: block.body?.join(" ") ?? "",
+        },
+      })),
+    };
+  }
+
+  return (
+    <>
+      <StructuredData data={breadcrumb} />
+      {faq ? <StructuredData data={faq} /> : null}
+      <LandingContentPage page={page} />
+    </>
+  );
 }
