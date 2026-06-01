@@ -31,7 +31,10 @@ export function Hero() {
             Leve formação social da candidatura ao emprego
           </h1>
           <div className="mt-12 flex flex-wrap gap-4">
-            <ButtonLink className="bg-white text-[#6F5BEF] hover:bg-white/90">
+            <ButtonLink
+              className="bg-white text-[#6F5BEF] hover:bg-white/90"
+              href="mailto:leandro.smacedo@live.com"
+            >
               Quero validar um piloto
             </ButtonLink>
             <ButtonLink

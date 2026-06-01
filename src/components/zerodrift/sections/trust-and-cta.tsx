@@ -77,19 +77,13 @@ export function TrustAndCta() {
               <p className="mt-5 max-w-[530px] text-[15px] font-medium leading-[1.45]">
                 Estamos em fase de ideação avançada e preparados para validar o MVP com parceiros institucionais.
               </p>
-              <div className="mt-8 flex max-w-[470px] flex-col gap-3 sm:flex-row" id="contato">
-                <input
-                  aria-label="Email institucional"
-                  className="h-11 flex-1 rounded-[6px] bg-white px-4 text-[13px] text-[#171719] outline-none"
-                  placeholder="Email institucional"
-                />
-                <button
-                  className="h-11 rounded-[6px] bg-white px-6 text-[11px] font-bold uppercase text-[#171719]"
-                  type="button"
-                >
-                  Quero conversar
-                </button>
-              </div>
+              <a
+                className="mt-8 inline-flex h-11 w-fit items-center rounded-[6px] bg-white px-6 text-[11px] font-bold uppercase text-[#171719] hover:bg-white/90"
+                href="mailto:leandro.smacedo@live.com"
+                id="contato"
+              >
+                Quero conversar
+              </a>
               <p className="mt-5 text-[10px] font-bold uppercase">
                 Sem mudança total do processo - validação controlada - foco em ROI social
               </p>

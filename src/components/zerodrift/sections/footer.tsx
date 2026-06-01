@@ -23,8 +23,54 @@ export function Footer() {
                 Formação social, dados de competência e empregabilidade real.
               </p>
               <p className="mt-7 font-medium text-[#171719]">Contato</p>
-              <p className="mt-2">Email: [inserir email]</p>
-              <p>LinkedIn: [inserir perfil]</p>
+              <div className="mt-3 flex flex-col gap-4">
+                <div className="flex items-center gap-3">
+                  <Image
+                    alt="Leandro Macedo"
+                    className="size-10 rounded-full object-cover"
+                    height={40}
+                    src="/images/leandro-macedo.jpg"
+                    width={40}
+                  />
+                  <div>
+                    <p className="font-medium text-[#171719]">Leandro Macedo</p>
+                    <a
+                      className="block text-[#6F5BEF] hover:underline"
+                      href="mailto:leandro.smacedo@live.com"
+                    >
+                      leandro.smacedo@live.com
+                    </a>
+                    <a
+                      className="block text-[#6F5BEF] hover:underline"
+                      href="https://www.linkedin.com/in/devmacedo"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      LinkedIn
+                    </a>
+                  </div>
+                </div>
+                <div className="flex items-center gap-3">
+                  <Image
+                    alt="Paula Guollo"
+                    className="size-10 rounded-full object-cover"
+                    height={40}
+                    src="/images/paula-guollo.jpg"
+                    width={40}
+                  />
+                  <div>
+                    <p className="font-medium text-[#171719]">Paula Guollo</p>
+                    <a
+                      className="block text-[#6F5BEF] hover:underline"
+                      href="https://www.linkedin.com/in/paula-guollo"
+                      rel="noopener noreferrer"
+                      target="_blank"
+                    >
+                      LinkedIn
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <div className="grid grid-cols-2 gap-8 md:grid-cols-4">

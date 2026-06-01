@@ -352,7 +352,7 @@ export const landingPages: LandingPage[] = [
       "O MVP inicial concentra-se em dois módulos: ATS Social e Perfil de Competências.",
     description:
       "Este recorte reduz complexidade e permite validar a operação em contexto real antes de expandir para módulos mais avançados.",
-    cta: { label: "Falar sobre piloto", href: "/contato" },
+    cta: { label: "Falar sobre piloto", href: "mailto:leandro.smacedo@live.com" },
     blocks: [
       {
         title: "Escopo inicial",
@@ -544,7 +544,7 @@ export const landingPages: LandingPage[] = [
       "Estamos em fase de ideação avançada e preparados para validar o MVP com parceiros institucionais.",
     description:
       "Procuramos fundações, ONGs, entidades de formação social e empresas parceiras que queiram testar uma forma mais clara de ligar formação, dados e empregabilidade.",
-    cta: { label: "Quero conversar sobre um piloto", href: "#form" },
+    cta: { label: "Quero conversar sobre um piloto", href: "mailto:leandro.smacedo@live.com" },
     blocks: [
       {
         title: "Dados a incluir no formulário",
@@ -568,8 +568,8 @@ export const landingPages: LandingPage[] = [
       {
         title: "Bloco de contato",
         items: [
-          "Email: [inserir email]",
-          "LinkedIn: [inserir perfil]",
+          "Leandro Macedo — leandro.smacedo@live.com — linkedin.com/in/devmacedo",
+          "Paula Guollo — linkedin.com/in/paula-guollo",
           "Apresentação: [inserir link]",
           "Formulário: [inserir link]",
         ],
