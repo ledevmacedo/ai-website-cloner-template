@@ -10,6 +10,7 @@ import { Hero } from "./sections/hero";
 import { HubVision } from "./sections/hub-vision";
 import { SeeItWork } from "./sections/see-it-work";
 import { TrustAndCta } from "./sections/trust-and-cta";
+import { WhoWeAre } from "./sections/who-we-are";
 
 export function ImpactFlowPage() {
   return (
@@ -23,6 +24,7 @@ export function ImpactFlowPage() {
       <HubVision />
       <Channels />
       <ApiInfrastructure />
+      <WhoWeAre />
       <TrustAndCta />
       <Footer />
     </PageShell>
