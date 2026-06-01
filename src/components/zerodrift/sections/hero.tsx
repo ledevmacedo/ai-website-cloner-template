@@ -20,6 +20,7 @@ export function Hero() {
             type="video/mp4"
           />
         </video>
+        <div className="absolute inset-0 bg-[#6F5BEF] mix-blend-color" />
         <div className="relative z-10 max-w-[880px]">
           <div className="mb-8 flex flex-wrap items-center gap-3 text-[13px] font-bold uppercase">
             <span>MVP em validação</span>
