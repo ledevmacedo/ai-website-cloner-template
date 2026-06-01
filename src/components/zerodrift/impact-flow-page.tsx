@@ -1,3 +1,4 @@
+import { QrDialog } from "./qr-dialog";
 import { PageShell } from "./page-shell";
 import { ApiInfrastructure } from "./sections/api-infrastructure";
 import { Channels } from "./sections/channels";
@@ -13,6 +14,7 @@ import { TrustAndCta } from "./sections/trust-and-cta";
 export function ImpactFlowPage() {
   return (
     <PageShell>
+      <QrDialog />
       <Header />
       <Hero />
       <EnforcementLayer />
